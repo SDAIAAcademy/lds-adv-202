@@ -229,6 +229,16 @@ def main():
           T.HORIZONS, [8, 30, 12, 18, 22])
     save(wb, OUT / "capacity.xlsx")
 
+    # Templates for labs 2.1 and 2.2
+    wb = book()
+    sheet(wb, "سجل الفجوات", ["البُعد", "الحالي", "المستهدف", "بحلول", "الفجوة", "هدف الاستراتيجية الذي يطلبه", "السبب من الأدلة", "الأثر إن بقيت", "الأولوية"],
+          [(f"{d[0]} {d[1]}", "", "", "", "", "", "", "", "") for d in T.DIMENSIONS], [30, 8, 8, 8, 8, 40, 40, 40, 10])
+    save(wb, OUT / "gap_register.xlsx")
+    wb = book()
+    sheet(wb, "خارطة الطريق", ["الرمز", "المبادرة", "التكلفة", "الجهد", "تعتمد على", "الأفق (H1، H2، H3)", "المسؤول", "المؤشر"],
+          [(i[0], i[1], i[3], i[4], "، ".join(i[5]) or "-", "", "", "") for i in T.INITIATIVES], [6, 50, 10, 8, 12, 12, 30, 36])
+    save(wb, OUT / "roadmap.xlsx")
+
     wb = book()
     order = {"H1": 1, "H2": 2, "H3": 3}
     rows = sorted(((T.ROADMAP[i[0]], i[0], i[1], i[3], i[4], "، ".join(i[5]) or "-", i[6], i[7]) for i in T.INITIATIVES),
