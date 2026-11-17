@@ -137,6 +137,13 @@ def lab_1_4():
     ref = [p[1] for p in prof]
     mean_self = [sum(m[i + 1] for m in man) / len(man) for i in range(6)]
     gaps = [s - r for s, r in zip(mean_self, ref)]
+    # What the lab 1.4 debrief shows: the managers' own ratings and the staff ranking, no reference yet
+    print("     managers' mean self-rating (0-5): " + " ".join(f"{d}={m:.1f}" for d, m in zip(DIMS, mean_self)))
+    staff_rank = [d for _, d in sorted(zip(allm, DIMS), reverse=True)]
+    self_rank = [d for _, d in sorted(zip(mean_self, DIMS), key=lambda t: (-t[0], t[1]))]
+    print(f"     staff survey order: {' > '.join(staff_rank)}; managers' order: {' > '.join(self_rank)}")
+    assert staff_rank[-2:] == ["D2", "D6"] and self_rank[-1] == "D6"
+    # For the lab 1.5 debrief (after the reference is shown)
     print("     managers' mean self-rating minus reference: " + " ".join(f"{d}={g:+.1f}" for d, g in zip(DIMS, gaps)))
     ops = man[0]
     print(f"     largest single gap: {ops[0]} on D2, {ops[2]} against {ref[1]}")
@@ -184,8 +191,8 @@ def lab_2_1(ref):
     assert [g[d][0] for d in DIMS] == ref
     total = sum(v[2] for v in g.values())
     print(f"2.1  gaps {{{', '.join(f'{d}: {v[0]}->{v[1]}' for d, v in g.items())}}}; total {total} levels; "
-          f"D3 holds at 3; D6 target 2, the sponsor's 4 would be a gap of {4 - g['D6'][0]} in 18 months")
-    assert g["D3"][2] == 0 and g["D6"][1] == 2
+          f"D3 holds at 3; D6 target {g['D6'][1]}, the sponsor's 4 would be a gap of {4 - g['D6'][0]} in 18 months")
+    assert g["D3"][2] == 0 and g["D6"][1] == 3 and total == 7
 
 
 def roadmap_problems(plan, inits, caps):

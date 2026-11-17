@@ -18,7 +18,7 @@
 | ثلاثة ادعاءات مجمَّعة يجب حذفها | `solutions/standin.json` | 1.4 |
 | زميل صدّق المدير والقائمة والعرض (D2، D4، D6) | `files/start/peer_scores.xlsx` | 1.5 |
 | مستهدف الراعي 4 في الذكاء الاصطناعي | `files/sponsor_brief.md` | 2.1 |
-| خطة الذكاء الاصطناعي أولًا تكسر ست قواعد | `files/initiatives.xlsx`، `files/capacity.xlsx` | 2.2 |
+| خطة الذكاء الاصطناعي أولًا فيها ست مخالفات للقواعد الثلاث | `files/initiatives.xlsx`، `files/capacity.xlsx` | 2.2 |
 | مسودة إحاطة بلا قرار | `solutions/standin.json` | 2.3 |
 
 ## ما يُشغَّل فعلًا وما يُشغَّل بنموذج بديل
