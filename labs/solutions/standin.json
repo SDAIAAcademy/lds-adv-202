@@ -1,0 +1,26 @@
+{
+  "about": "Scripted stand-in for the hosted model. These are written replies, not model output, with the errors a real model makes, so each check shows the lab's verification step catches them. No model was called.",
+  "D1_4_synthesis": {
+    "prompt_file": "the lab page, step 4",
+    "claims": [
+      {"text": "نحو ثلث قراءات العدادات تقديرية بسبب صعوبة الوصول إلى العدادات في الأحياء القديمة", "cites": ["N-OPS-04"], "dimension": "D2"},
+      {"text": "لا إجراء موحدًا لتصحيح أخطاء البيانات؛ كل منطقة تصحح بطريقتها", "cites": ["N-OPS-05"], "dimension": "D2"},
+      {"text": "بيانات الشكاوى في 40 فئة نصية ولا مالك لها", "cites": ["N-CS-03"], "dimension": "D2"},
+      {"text": "القياس الوحيد للجودة في الفوترة تقرير تُعدّه محللة الفوترة بجهدها ويتوقف إذا غابت", "cites": ["N-CS-02"], "dimension": "D2"},
+      {"text": "الإدارة العليا تدعم الذكاء الاصطناعي بقوة وتموّل نموذج التسربات", "cites": ["N-OPS-08"], "dimension": "D6"},
+      {"text": "رضا العملاء عن المساعد الآلي 92%، ويُوصى بتوسيعه إلى كل القنوات", "cites": [], "dimension": "D6"},
+      {"text": "تقارير خدمة العملاء تُطلب من تقنية المعلومات بالبريد وتصل بعد أسبوع تقريبًا", "cites": ["N-CS-06"], "dimension": "D3"},
+      {"text": "ينبغي شراء منصة بيانات جديدة بدل المنصة التجريبية", "cites": [], "dimension": "D3"}
+    ],
+    "unsupported": {"N-OPS-08": ["تدعم", "تموّل"]}
+  },
+  "D2_3_draft_outline": {
+    "slides": [
+      "نمير والذكاء الاصطناعي: رحلة نحو الريادة",
+      "منهجية التقييم: ستة أبعاد ومقابلات ووثائق واستبانة",
+      "النتائج: ست درجات بالتفصيل",
+      "خارطة الطريق: 12 مبادرة",
+      "شكرًا"
+    ]
+  }
+}
