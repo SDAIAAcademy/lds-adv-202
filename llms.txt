@@ -1,0 +1,35 @@
+# تقييم نضج البيانات والذكاء الاصطناعي وخرائط الطريق
+
+> تقيّم نضج البيانات والذكاء الاصطناعي في جهة بأدلة متقاطعة ومستوى ثقة، وتحوّل الفجوات إلى خارطة طريق ممكنة، وتطلب من الراعي قرارات محددة. مقرر من أكاديمية سدايا، الرمز LDS-ADV-202، الإصدار 2027.1.0، بالعربية.
+
+كل شريحة عنوان مثل "#### [day1#slide-id] العنوان": استشهد بالشرائح بهذا المعرّف، وكل استشهاد رابط (slides/day1.html#slide-id). هذه الملفات هي ما يراه المشارك: لا ملاحظات المدرّب فيها ولا مفاتيح الإجابة.
+
+## المقرر
+
+- [صفحة المقرر](https://sdaiaacademy.github.io/lds-adv-202/index.md): نظرة عامة ونواتج التعلم والجدول والمختبرات؛ الصفحة نفسها https://sdaiaacademy.github.io/lds-adv-202/index.html
+- [المقرر كاملًا](https://sdaiaacademy.github.io/lds-adv-202/llms-full.txt): كل وحدة وجلسة وشريحة في ملف واحد، نحو 15,765 من الوحدات النصية
+- [أسئلة التدريب](https://sdaiaacademy.github.io/lds-adv-202/practice.html): أسئلة تختبر بها نفسك، مع تعليل بعد كل إجابة
+
+## الشرائح
+
+- [اليوم 1: من النموذج إلى ملف الدرجات](https://sdaiaacademy.github.io/lds-adv-202/slides/day1.md): نموذج يُختار ويُكيَّف، وأدلة تُجمع من المقابلات والوثائق والاستبانة، ثم درجة لكل بُعد بمستوى ثقة؛ الجلسات: اختيار نموذج النضج وتكييفه، مقابلات تنتج أدلة، الوثائق والجولات الميدانية، الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات، تثليث الأدلة ومنح الدرجات ومعايرتها؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/slides/day1.html؛ نحو 8,917 من الوحدات النصية
+- [اليوم 2: من الفجوات إلى قرار الراعي](https://sdaiaacademy.github.io/lds-adv-202/slides/day2.md): مستهدفات من الاستراتيجية، وسجل فجوات، وخارطة طريق تحترم التبعيات والميزانية والقدرة، وإحاطة تطلب قرارات؛ الجلسات: مستهدفات من الاستراتيجية وسجل الفجوات، ترتيب خارطة الطريق بالتبعيات والميزانية والقدرة، إحاطة تطلب قرارات؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/slides/day2.html؛ نحو 5,003 من الوحدات النصية
+- [المشروع الختامي: التقييم المراقب والإحاطة للراعي](https://sdaiaacademy.github.io/lds-adv-202/slides/capstone.md): في ختام اليوم الثاني: ساعة لتقييم بُعدين دون ذكاء اصطناعي، ثم إحاطة كل ثنائي للراعي في 15 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/slides/capstone.html؛ نحو 1,235 من الوحدات النصية
+
+## المختبرات
+
+- [المختبر 1.1: تكييف نموذج والتخطيط للأدلة](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_1_model_plan.md): اليوم 1، الجلسة 1، 45 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D1_1_model_plan.html
+- [المختبر 1.2: مقابلة مديرَين في تمثيل للأدوار](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_2_interviews.md): اليوم 1، الجلسة 2، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D1_2_interviews.html
+- [المختبر 1.3: مراجعة حزمة الوثائق](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_3_documents.md): اليوم 1، الجلسة 3، 40 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D1_3_documents.html
+- [المختبر 1.4: الاستبانة والتقييم الذاتي وتجميع الملاحظات](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_4_survey_synthesis.md): اليوم 1، الجلسة 4، 40 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D1_4_survey_synthesis.html
+- [المختبر 1.5: تقييم ستة أبعاد ومعايرة الدرجات مع زميل](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_5_score_calibrate.md): اليوم 1، الجلسة 5، 60 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D1_5_score_calibrate.html
+- [المختبر 2.1: المستهدفات وسجل الفجوات](https://sdaiaacademy.github.io/lds-adv-202/labs/D2_1_gap_register.md): اليوم 2، الجلسة 1، 35 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D2_1_gap_register.html
+- [المختبر 2.2: خارطة الطريق بالآفاق الثلاثة](https://sdaiaacademy.github.io/lds-adv-202/labs/D2_2_roadmap.md): اليوم 2، الجلسة 2، 50 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D2_2_roadmap.html
+- [المختبر 2.3: الإحاطة والتدرّب عليها](https://sdaiaacademy.github.io/lds-adv-202/labs/D2_3_readout.md): اليوم 2، الجلسة 3، 30 دقيقة؛ الصفحة: https://sdaiaacademy.github.io/lds-adv-202/labs/D2_3_readout.html
+
+## ملفات السياق
+
+- [context/course.md](https://sdaiaacademy.github.io/lds-adv-202/context/course.md): المقرر كاملًا، لمساعد يقبل ملفًا مرفقًا، نحو 15,765 من الوحدات النصية
+- [context/day1.md](https://sdaiaacademy.github.io/lds-adv-202/context/day1.md): اليوم 1، نحو 8,917 من الوحدات النصية
+- [context/day2.md](https://sdaiaacademy.github.io/lds-adv-202/context/day2.md): اليوم 2، نحو 5,003 من الوحدات النصية
+- [context/capstone.md](https://sdaiaacademy.github.io/lds-adv-202/context/capstone.md): المشروع الختامي، نحو 1,235 من الوحدات النصية

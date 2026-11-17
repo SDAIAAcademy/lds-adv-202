@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-ax="deck" data-track="executives">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>اليوم 1 · من النموذج إلى ملف الدرجات · تقييم نضج البيانات والذكاء الاصطناعي وخرائط الطريق</title>
+<meta name="generator" content="SDAIA Academy engine 1.0.0">
+<link rel="icon" href="../_engine/icon.svg">
+<link rel="alternate" type="text/markdown" href="day1.md">
+<link rel="describedby" href="../llms.txt">
+<link rel="stylesheet" href="../_engine/academy.css">
+</head>
+<body>
+<div class="deck" data-course="تقييم نضج البيانات والذكاء الاصطناعي وخرائط الطريق" data-track="executives" data-day="اليوم 1">
+<section class="slide title" id="title" data-auto="title" data-label="الترحيب" data-n="1">
+  <div class="kicker">أكاديمية سدايا · تقييم نضج البيانات والذكاء الاصطناعي وخرائط الطريق</div>
+  <h1>من النموذج إلى ملف الدرجات</h1>
+  <p class="lead mt">اليوم 1: نموذج يُختار ويُكيَّف، وأدلة تُجمع من المقابلات والوثائق والاستبانة، ثم درجة لكل بُعد بمستوى ثقة</p>
+  <div class="meta"><span class="track">مسار التنفيذيين والقادة</span><span>يومان تدريبيان + يوم للمشروع الختامي</span><span>5 جلسات · 5 مختبرات</span><span>LDS-ADV-202</span></div>
+  <aside class="notes"><p>رحّب بالمشاركين، واسأل: من شارك في تقييم نضج من قبل، مقيِّمًا أو مقيَّمًا؟ وماذا حدث بعد التقرير؟ اليوم كله جمع أدلة ثم درجة: نختار نموذجًا ونكيّفه، ونقابل مديرَين، ونقرأ عشرين وثيقة واستبانة، وننهي اليوم بملف درجات لستة أبعاد. الاستراحات بزر B.</p></aside>
+</section>
+
+<section class="slide" id="agenda" data-auto="agenda" data-label="جدول اليوم" data-n="2">
+  <div class="kicker">اليوم</div>
+  <h2>من النموذج إلى ملف الدرجات</h2>
+  <div class="agenda"><div class="item"><div><b>الجلسة 1 · اختيار نموذج النضج وتكييفه</b><small>نماذج إدارة البيانات وتبني الذكاء الاصطناعي، والنضج غير الامتثال، وخطة الأدلة</small></div></div><div class="item"><div><b>الجلسة 2 · مقابلات تنتج أدلة</b><small>دليل المقابلة، وطلب المثال والمخرج، والملاحظات المرقمة</small></div></div><div class="item"><div><b>الجلسة 3 · الوثائق والجولات الميدانية</b><small>حالة الوثيقة ودليل تشغيلها، والسياسة ليست ممارسة</small></div></div><div class="item"><div><b>الجلسة 4 · الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات</b><small>الحجب والتضخم، والترميز، والتجميع الذي يستشهد بالملاحظات</small></div></div><div class="item"><div><b>الجلسة 5 · تثليث الأدلة ومنح الدرجات ومعايرتها</b><small>التثليث، وقواعد الدرجة والثقة، والمعايرة بين المقيّمين</small></div></div></div>
+  <aside class="notes"><p>خمس جلسات اليوم وثلاث غدًا، ثم التقييم المراقب والإحاطة في ختام الغد. الخيط الواحد: لا درجة بلا دليلين من نوعين.</p></aside>
+</section>
+
+<section class="slide" id="setup-check" data-label="قبل أن نبدأ" data-n="3">
+  <div class="kicker">قبل أن نبدأ</div>
+  <h2>افتح ثلاثة أشياء، ولا تثبّت شيئًا</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>صفحة المقرر</h4><p class="small mb0">منها المختبرات وملفات شركة نمير. افتح المختبر 1.1 وتأكد أن <span class="en">evidence_plan.xlsx</span> يُنزَّل ويُفتح.</p></div>
+    <div class="card c-cyan"><h4>جدول بيانات</h4><p class="small mb0">يقرأ ملفات <span class="en">xlsx</span> و<span class="en">csv</span> ويصنع جداول محورية. وسبورة رقمية لرسم التبعيات غدًا.</p></div>
+    <div class="card c-coral"><h4>نموذج لغوي مستضاف</h4><p class="small mb0">للمختبر 1.4 وحده: نموذج مفتوح الأوزان على خدمة استضافة، أو المساعد المعتمد في جهتك. لا يُنزَّل أي نموذج على الجهاز.</p></div>
+  </div>
+  <div class="callout tip mt"><b>الاختبار:</b> افتح <span class="en">files/staff_survey.csv</span> في جدول البيانات. إن ظهرت أسماء الإدارات بالعربية سليمة، فأنت جاهز.</div>
+  <aside class="notes"><p>إن ظهرت العربية رموزًا في ملف الاستبانة، فاستورده باختيار ترميز UTF-8 بدل فتحه مباشرة. ومن لا يتاح له نموذج مستضاف، يعمل في المختبر 1.4 على ادعاءات النموذج البديل المطبوعة.</p></aside>
+</section>
+
+<!-- الجلسة 1 -->
+
+<section class="slide section" id="s1" data-auto="section" data-session="1" data-n="4">
+  <div class="kicker">الجلسة 1</div>
+  <h1>اختيار نموذج النضج وتكييفه</h1>
+  <ul class="bullets outcomes"><li>تقارن نماذج نضج منشورة بمعايير مكتوبة وتختار أساسًا لتقييم جهة</li><li>تكيّف النموذج إلى أبعاد تجيب عن أسئلة الراعي</li><li>تبني خطة أدلة يرتبط كل سؤال فيها ببُعد ومصدر</li></ul>
+  <div class="sess-no">01</div>
+</section>
+
+<section class="slide" id="assessment-answers-three" data-lo="LO1" data-n="5" data-session="1">
+  <div class="kicker">ما الذي يشتريه الراعي</div>
+  <h2>تقييم النضج يجيب عن ثلاثة أسئلة، والتدقيق عن سؤال واحد</h2>
+  <div class="cols cols-2">
+    <div class="card c-teal"><h4>تقييم النضج</h4><ul class="bullets small mb0"><li>أين نحن في كل بُعد؟</li><li>بأي ثقة نقول ذلك؟</li><li>ما الخطوة التالية التي تستحق المال؟</li></ul></div>
+    <div class="card c-coral"><h4>تدقيق الامتثال</h4><ul class="bullets small mb0"><li>هل كل متطلب مطبق، نعم أم لا؟</li><li>الناتج قائمة مخالفات تُصحَّح</li><li>يتناوله المقرر <span class="en">LDS-DMG-207</span></li></ul></div>
+  </div>
+  <div class="callout note mt"><b>ما ستسلّمه في هذا المقرر:</b> ملف درجات لستة أبعاد بمستوى ثقة، وسجل فجوات، وخارطة طريق، وإحاطة تطلب قرارات.</div>
+  <aside class="notes"><p>ابدأ بالفرق بين التقييم والتدقيق، لأن كثيرًا من الرعاة يطلبون «تقييم نضج» ويتوقعون قائمة مخالفات، أو العكس. اسأل القاعة: لو كنت الرئيس التنفيذي، أي السؤالين يجعلك تنفق؟</p></aside>
+</section>
+
+<section class="slide" id="recap-national-domains" data-lo="LO1" data-n="6" data-session="1">
+  <div class="kicker">مراجعة من المقرر LDS-DMG-101</div>
+  <h2>الضوابط الوطنية: 15 مجالًا، و77 ضابطًا، و191 مواصفة</h2>
+  <div class="cols cols-32">
+    <ul class="bullets">
+      <li>أصدرها مكتب إدارة البيانات الوطنية في سدايا، وتلتزم بها الجهات العامة</li>
+      <li>من الحوكمة ودليل البيانات والجودة، إلى التصنيف وحماية البيانات الشخصية</li>
+      <li>المجال الخامس عشر، أمن البيانات وحمايتها، تتولى ضوابطه الهيئة الوطنية للأمن السيبراني</li>
+      <li>تقيس الامتثال لكل مواصفة سنويًا، مع أدلة التطبيق</li>
+    </ul>
+    <div class="stack">
+      <div class="stat center"><div class="big">15</div><div class="lbl">مجالًا تغطي البيانات من حوكمتها إلى حمايتها</div></div>
+      <div class="callout note small"><b>سؤال للمختبر:</b> هل تغطي كل ما سأل عنه راعي التقييم؟ ستجيب بنفسك بعد قليل.</div>
+    </div>
+  </div>
+  <div class="caption">المصدر: مكتب إدارة البيانات الوطنية، ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية.</div>
+  <aside class="notes"><p>شريحة مراجعة فقط: المجالات درسها المشاركون في LDS-DMG-101 أو ما يعادله. لا تعدّد المجالات الخمسة عشر. لا تقل الآن إنها لا تغطي استخدام الذكاء الاصطناعي: هذا ما يكتشفه المشاركون في المختبر 1.1 حين يقارنون النماذج بأسئلة الراعي.</p><p>Sources: ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية، القسم 4 وجدول المجالات.</p></aside>
+</section>
+
+<section class="slide" id="adoption-framework-pillars" data-lo="LO1" data-n="7" data-session="1">
+  <div class="kicker">إطار تبني الذكاء الاصطناعي</div>
+  <h2>ثلاث دعائم: التوجهات، والممكنات، والمخرجات</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>التوجهات</h4><p class="small mb0">الاستراتيجية، والحوكمة</p></div>
+    <div class="card c-cyan"><h4>الممكنات</h4><p class="small mb0">البيانات، والبنية التحتية، والقدرات البشرية</p></div>
+    <div class="card c-coral"><h4>المخرجات</h4><p class="small mb0">التطبيقات، والأثر</p></div>
+  </div>
+  <div class="callout tip mt"><b>ما يعنيه للتقييم:</b> البيانات ممكِّن داخل الإطار، لا هدف في ذاته. الأثر يُقاس في الكفاءة والإنتاجية وجودة الخدمة.</div>
+  <div class="callout note mt-s small"><b>ما لا يعطيه:</b> مستويات نضج بأسمائها. يذكر الإطار أن مؤشرًا لنضج التبني في الجهات الحكومية قيد التطوير.</div>
+  <div class="caption">المصدر: سدايا، إطار تبني الذكاء الاصطناعي.</div>
+  <aside class="notes"><p>سبعة مكونات في ثلاث دعائم، ولكل مكون عناصر فرعية (مثلًا تحت البيانات: التوافر والوصول، والجودة والتكامل، والاعتمادية). لا نقرأ نص الإطار هنا؛ نحتاج بنيته لنعرف ماذا يضيف إلى الضوابط الوطنية.</p><p>Sources: سدايا، إطار تبني الذكاء الاصطناعي، القسم 1.5 والشكل الذي يليه.</p></aside>
+</section>
+
+<section class="slide" id="maturity-not-compliance" data-lo="LO1" data-n="8" data-session="1">
+  <div class="kicker">النضج ليس امتثالًا</div>
+  <h2>الامتثال يسأل «هل هو موجود؟»، والنضج يسأل «هل يعمل ويتحسن؟»</h2>
+  <table class="t">
+    <tr><th></th><th>الامتثال</th><th>النضج</th></tr>
+    <tr><td><b>الوحدة</b></td><td>المواصفة</td><td>القدرة</td></tr>
+    <tr><td><b>القيمة</b></td><td>ثنائية: 100% للمطبقة كاملة، و0% للجزئية</td><td>مستوى على سلّم متدرج</td></tr>
+    <tr><td><b>الدليل</b></td><td>وجود الوثيقة وتطبيقها</td><td>تشغيل متكرر، وقياس، وتحسين</td></tr>
+    <tr class="hl"><td><b>مثال موازٍ</b></td><td>مستشفى اعتمد سياسة النسخ الاحتياطي: ممتثل</td><td>لم يجرّب الاستعادة مرة واحدة: نضج منخفض</td></tr>
+  </table>
+  <div class="caption">المصدر للامتثال: مكتب إدارة البيانات الوطنية، ضوابط ومواصفات إدارة البيانات الوطنية. المثال الموازي افتراضي.</div>
+  <aside class="notes"><p>في المقرر LDS-DMG-101 رأى المشاركون أن الوثيقة المعتمدة غير المطبقة لا ترفع الدرجة. هنا نضيف العمق: الامتثال الثنائي يعطي صفرًا للمطبق جزئيًا، والنضج يعطيه مستوى. فقد تكون جهة ممتثلة في مواصفة وناضجة قليلًا فيها، أو غير ممتثلة وفي منتصف الطريق.</p><p>Sources: ضوابط ومواصفات إدارة البيانات الوطنية، القسم 4 (التقييم الثنائي لكل مواصفة).</p></aside>
+</section>
+
+<section class="slide" id="choose-model-criteria" data-lo="LO1" data-n="9" data-session="1">
+  <div class="kicker">اختيار النموذج</div>
+  <h2>اختر النموذج بأسئلة الراعي، لا بشهرته</h2>
+  <table class="t">
+    <tr><th>المعيار</th><th>السؤال الذي تطرحه</th></tr>
+    <tr><td><b>التغطية</b></td><td>هل يغطي كل ما سأل عنه الراعي؟</td></tr>
+    <tr><td><b>المستويات</b></td><td>هل يصف ما يميّز مستوى عن الذي يليه؟</td></tr>
+    <tr><td><b>السياق</b></td><td>هل يعرف التنظيمات التي تخضع لها الجهة؟</td></tr>
+    <tr><td><b>الترخيص</b></td><td>هل يجوز تكييفه ونشر المكيَّف داخل الجهة؟</td></tr>
+    <tr><td><b>القابلية للمقارنة</b></td><td>هل ستُقاس الجهة به لاحقًا من جهة أخرى؟</td></tr>
+  </table>
+  <div class="callout warn mt small"><b>أين يقع الخطأ:</b> نموذج واحد مشهور يُطبَّق كما هو، فتخرج درجات لا تجيب عن السؤال الذي دفع ثمن التقييم.</div>
+  <aside class="notes"><p>الترخيص معيار حقيقي: بعض النماذج المنشورة تمنع الاستخدام التجاري أو تُلزم بنشر المعدَّل بالترخيص نفسه. ستراه في أحد النماذج الثلاثة في المختبر. لا تقل أيها؛ دعهم يكتشفون.</p></aside>
+</section>
+
+<section class="slide" id="adapt-model-moves" data-lo="LO1" data-n="10" data-session="1">
+  <div class="kicker">التكييف</div>
+  <h2>التكييف أربع حركات، وكل حركة تُكتب مع سببها</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · خذ البنية</b>من نموذج أساس يعرفه الراعي</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · ادمج</b>ما يتداخل حتى لا يُقاس مرتين</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>3 · أضف</b>ما لا يغطيه الأساس من نموذج ثانٍ</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>4 · سجّل</b>من أين جاء كل بُعد</div>
+  </div>
+  <div class="callout tip mt"><b>خمسة إلى سبعة أبعاد.</b> أقل من ذلك يخلط قدرات مختلفة في درجة واحدة، وأكثر منه لا يتسع له يومان من الأدلة.</div>
+  <aside class="notes"><p>مثال موازٍ: جامعة تكيّف نموذجًا لنضج البيانات، فتدمج «البيانات الرئيسية» في «الجودة»، وتضيف بُعد «بيانات البحث» من نموذج آخر، وتسجل الأصل. السجل هو ما يسمح لمقيّم آخر بعد سنة أن يقيس بالنموذج نفسه.</p></aside>
+</section>
+
+<section class="slide" id="evidence-plan-trace" data-lo="LO1" data-n="11" data-session="1">
+  <div class="kicker">خطة الأدلة</div>
+  <h2>كل سؤال يعرف بُعده، وكل بُعد يعرف مصادره</h2>
+  <div class="cols cols-2">
+    <table class="t small">
+      <tr><th>البُعد</th><th>مقابلة</th><th>وثيقة</th><th>استبانة</th></tr>
+      <tr><td>بيانات البحث</td><td>عميد البحث</td><td>سياسة إدارة البيانات البحثية</td><td>«أودعتُ بياناتي في المستودع»</td></tr>
+      <tr><td>الجودة</td><td>مسجّل الجامعة</td><td>تقرير أخطاء القيد</td><td>«أعرف لمن أبلغ عن خطأ»</td></tr>
+    </table>
+    <ul class="bullets">
+      <li><b>مصدران من نوعين</b> لكل بُعد على الأقل، قبل أن تبدأ</li>
+      <li><b>سؤال المقابلة</b> يطلب مثالًا ومخرجًا</li>
+      <li><b>طلب الوثيقة</b> يطلب سجل تشغيل، لا السياسة وحدها</li>
+      <li><b>بند الاستبانة</b> يصف سلوكًا يعرفه الموظف</li>
+    </ul>
+  </div>
+  <div class="caption">مثال موازٍ لجامعة افتراضية، لا لشركة نمير.</div>
+  <aside class="notes"><p>البُعد الذي له مصدر واحد لا يحصل لاحقًا على ثقة عالية مهما كان المصدر جيدًا. لذلك نتتبع التغطية الآن، في الخطة، لا بعد جمع الأدلة.</p></aside>
+</section>
+
+<section class="slide" id="check-model-choice" data-lo="LO1" data-n="12" data-session="1">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>نموذج ملزم، وراعٍ يسأل عما لا يغطيه</h2>
+  <div class="quiz" data-type="single" data-lo="LO1" data-id="check-model-choice-q1">
+    <p class="lead">جامعة افتراضية طلب رئيسها تقييمًا لنضج البيانات يشمل بيانات البحث. اقترح زميلك اعتماد نموذج ملزم لإدارة البيانات وحده لأنه ملزم، وهو لا يذكر بيانات البحث. ما ردك؟</p>
+    <div class="opts">
+      <div class="opt" data-ok data-k="أ">أعتمده أساسًا، وأضيف بُعد بيانات البحث من نموذج آخر</div>
+      <div class="opt" data-why="يخلط بين الإلزام والتغطية: النموذج الملزم لا يغطي ما لم يُكتب له" data-k="ب">أعتمده كما هو، فالنموذج الملزم يغطي كل ما سأل عنه رئيس الجامعة</div>
+      <div class="opt" data-why="يظن أن الأشهر أصلح: نموذج من سياق آخر لا يعرف تنظيمات الجامعة ولا يغطي ما سأله رئيسها" data-k="ج">أستبدله بنموذج دولي أشهر منه وأكثر استخدامًا في الجامعات المماثلة</div>
+      <div class="opt" data-why="يخلط بين التقييم والتدقيق: قائمة المواصفات تقيس الامتثال الثنائي لا مستوى النضج" data-k="د">أحوّل مواصفاته إلى قائمة تحقق بنعم أو لا لكل إدارة في الجامعة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> النموذج الملزم لا يغطي ما سأل عنه الراعي. التكييف يأخذ الأساس ويضيف ما ينقصه من نموذج آخر، ويسجل أصل كل بُعد.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: أ. المثال الموازي نفسه في شريحة التكييف (بيانات البحث). إن اختار أحد «د» فارجع إلى شريحة النضج ليس امتثالًا: قائمة نعم ولا تعطي امتثالًا ثنائيًا، لا مستوى. لا تربطها بنماذج شركة نمير: ذلك عمل المختبر.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-1" data-auto="lab" data-lab="1.1" data-label="المختبر 1.1" data-n="13" data-session="1">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.1 · 45 دقيقة</div><h2>تكييف نموذج والتخطيط للأدلة</h2><p class="lead small">تقارن ثلاثة نماذج منشورة، وتختار أساسًا وتكيّفه إلى أبعاد لشركة نمير، ثم تكتب خطة أدلة من أسئلة مقابلات وطلب وثائق وبنود استبانة يرتبط كل منها ببُعد.</p><a class="nb" href="../labs/D1_1_model_plan.html">D1_1_model_plan.html</a></div><ul class="checklist"><li>اقرأ مقتطفات النماذج الثلاثة والهيكل التنظيمي واملأ جدول المقارنة <span class="min">10 د</span></li><li>اختر النموذج الأساس واكتب مبرر الاختيار في ثلاثة أسطر <span class="min">6 د</span></li><li>كيّف النموذج إلى أبعاد تجيب عن أسئلة الراعي <span class="min">9 د</span></li><li>اكتب أسئلة المقابلتين لكل بُعد <span class="min">8 د</span></li><li>اكتب طلب الوثائق وأربعة بنود للاستبانة <span class="min">7 د</span></li><li>تتبّع: لكل بُعد مصدران من نوعين على الأقل <span class="min">5 د</span></li><li class="stretch">✱ إضافي: اكتب سؤالًا لجولة ميدانية في غرفة التحكم يكشف ما لا تكشفه المقابلة</li></ul></div>
+  <aside class="notes"><p>البداية من model_extracts.md والهيكل والموجز. راقب من يختار النموذج أ وحده ومن يبحث عن أوصاف مستويات النموذج ج لينقلها. ذكّر بأن الخطة تُكتب بأنواع الوثائق، لأنهم لا يعرفون رموزها بعد. وزّع scoring_guide.xlsx بعد المختبر لا قبله.</p></aside>
+</section>
+
+<section class="slide" id="debrief-1-1" data-lo="LO1" data-n="14" data-session="1">
+  <div class="kicker">بعد المختبر 1.1</div>
+  <h2>المرجع: بيانات من الضوابط الوطنية، وذكاء اصطناعي من إطار التبني</h2>
+  <div class="cols cols-32">
+    <table class="t small">
+      <tr><th>البُعد</th><th>من أين</th></tr>
+      <tr><td>D1 الاستراتيجية والحوكمة</td><td>أ: الحوكمة؛ ب: التوجهات</td></tr>
+      <tr><td>D2 جودة البيانات والبيانات الوصفية</td><td>أ: الجودة، ودليل البيانات، والبيانات الرئيسية</td></tr>
+      <tr><td>D3 المنصات والتكامل</td><td>أ: العمليات والتكامل؛ ب: البنية التحتية</td></tr>
+      <tr><td>D4 الحماية والتصنيف</td><td>أ: التصنيف وحماية البيانات الشخصية</td></tr>
+      <tr><td>D5 القدرات البشرية والثقافة</td><td>ب: القدرات البشرية</td></tr>
+      <tr><td>D6 استخدام الذكاء الاصطناعي وأثره</td><td>ب: التطبيقات، والأثر</td></tr>
+    </table>
+    <div class="stack">
+      <div class="callout warn small"><b>الفخ الأول:</b> النموذج أ وحده يترك D6 بلا بُعد.</div>
+      <div class="callout warn small"><b>الفخ الثاني:</b> نقل أوصاف مستويات النموذج ج، وترخيصه غير تجاري ويُلزم بالمشاركة بالمثل.</div>
+      <div class="callout tip small"><b>من الآن:</b> هذه الأبعاد الستة ومقياس المقرر في <span class="en">start/scoring_guide.xlsx</span>.</div>
+    </div>
+  </div>
+  <aside class="notes"><p>الحل المرجعي في labs/solutions/D1_1_model_plan.md: خطة من 19 بندًا، لكل بُعد ثلاثة أنواع من المصادر على الأقل (تحقق منها check.py). اقبل أبعادًا أخرى إن كانت مبررة ومسجلة الأصل؛ لكن ما يلي من مختبرات يبدأ من الأبعاد الستة المرجعية ليقارن الجميع بالمرجع نفسه.</p></aside>
+</section>
+
+<!-- الجلسة 2 -->
+
+<section class="slide section" id="s2" data-auto="section" data-session="2" data-n="15">
+  <div class="kicker">الجلسة 2</div>
+  <h1>مقابلات تنتج أدلة</h1>
+  <ul class="bullets outcomes"><li>تجري مقابلة تقييم بدليل مكتوب وأسئلة متابعة تطلب مثالًا ومخرجًا</li><li>تدوّن ملاحظات مرقمة تميّز بين ما قيل وما عُرض وما لوحظ</li><li>تلتقط الادعاء الذي لا يقف خلفه دليل</li></ul>
+  <div class="sess-no">02</div>
+</section>
+
+<section class="slide" id="interview-is-evidence" data-lo="LO2" data-n="16" data-session="2">
+  <div class="kicker">المقابلة أداة قياس</div>
+  <h2>المقابلة تجمع أدلة، لا انطباعات</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li><b>دليل مكتوب</b> يربط كل سؤال ببُعد</li>
+      <li><b>سؤال رئيسي مفتوح</b>، ثم متابعة تطلب مثالًا</li>
+      <li><b>ملاحظة مرقمة</b> لكل ادعاء أو مخرج</li>
+      <li><b>الغرض والسرية</b> في الدقيقة الأولى، والإذن بالتدوين</li>
+    </ul>
+    <div class="card c-coral"><h4>لماذا دون ذكاء اصطناعي؟</h4><p class="small mb0">التسجيل يحتاج موافقة المحاوَر، والتفريغ الآلي يرسل كلامه إلى خدمة خارجية. والمهارة نفسها، أن تسمع الادعاء وتطلب دليله في اللحظة، لا تُفوَّض.</p></div>
+  </div>
+  <aside class="notes"><p>سياسة المقرر: المقابلات والتقييم المراقب دون ذكاء اصطناعي. التجميع بالنموذج يأتي لاحقًا، في الجلسة الرابعة، وبعد ترميز الأسماء.</p></aside>
+</section>
+
+<section class="slide" id="said-shown-observed" data-lo="LO2" data-n="17" data-session="2">
+  <div class="kicker">ثلاث علامات للملاحظة</div>
+  <h2>ما قيل، وما عُرض، وما لوحظ: ثلاثة أوزان مختلفة</h2>
+  <div class="ladder" style="--n:3">
+    <div class="rung c-coral off"><b>[قال]</b>ما قاله المحاوَر<small>مصدر يُتحقق منه</small></div>
+    <div class="rung c-cyan off"><b>[عرض]</b>مخرج رأيته بعينك<small>تقرير بتاريخه، سجل، شاشة</small></div>
+    <div class="rung c-teal on"><b>[لوحظ]</b>ما شاهدته يحدث<small>إجابة دون مثال، عملية تجري</small></div>
+  </div>
+  <div class="callout tip mt"><b>القاعدة:</b> كل [قال] يحمل ادعاء نضج يحتاج [عرض] أو وثيقة. ضع خطًا تحت ما بقي بلا دليل: هذه قائمة طلباتك.</div>
+  <aside class="notes"><p>العلامة الثالثة تفاجئ المشاركين: «لوحظ أنه أجاب عن الجودة بعبارات عامة» ملاحظة مشروعة، لأنها وصف لما حدث لا حكم على الشخص. لا تكتب «كان متهربًا»؛ اكتب ما رأيت.</p></aside>
+</section>
+
+<section class="slide" id="ask-for-last-time" data-lo="LO2" data-n="18" data-session="2">
+  <div class="kicker">سؤال المتابعة</div>
+  <h2>«متى حدث آخر مرة؟ أرني» يحوّل الصفة إلى دليل</h2>
+  <div class="chat">
+    <div class="msg user"><span class="who">المقيّم</span>كيف تتعاملون مع أخطاء سجلات المرضى؟</div>
+    <div class="msg ai"><span class="who">مديرة السجلات الطبية</span>لدينا إجراء دقيق، والجودة عندنا عالية جدًا.</div>
+    <div class="msg user"><span class="who">المقيّم</span>متى اكتُشف آخر خطأ؟ ومن صحّحه؟ هل يمكنني رؤية السجل؟</div>
+    <div class="msg ai"><span class="who">مديرة السجلات الطبية</span>الشهر الماضي اكتشفه قسم الفوترة… في الحقيقة لا نسجّل التصحيحات.</div>
+  </div>
+  <div class="caption">مثال موازٍ من مستشفى افتراضي.</div>
+  <aside class="notes"><p>اقرأ الحوار بصوتين. الجملة الأخيرة هي الدليل: لا سجل للتصحيحات، وما اكتُشف اكتُشف خارج الإدارة. السؤال الذي كشفها طلب «آخر مرة» و«من» و«أرني». اطلب من المشاركين كتابة هذه الكلمات الثلاث على ورقة أمامهم في المقابلة.</p></aside>
+</section>
+
+<section class="slide" id="leading-vs-open" data-lo="LO2" data-n="19" data-session="2">
+  <div class="kicker">صياغة السؤال</div>
+  <h2>السؤال الموحي يجمع رأيك أنت</h2>
+  <table class="t">
+    <tr><th>موحٍ</th><th>مفتوح</th></tr>
+    <tr><td>أليست جودة البيانات مشكلة كبيرة عندكم؟</td><td>ماذا حدث آخر مرة وجدتم خطأ في البيانات؟</td></tr>
+    <tr><td>هل عندكم استراتيجية بيانات معتمدة؟</td><td>ما آخر قرار اتخذتموه اعتمادًا على البيانات؟</td></tr>
+    <tr><td>تستخدمون الذكاء الاصطناعي، صحيح؟</td><td>هل يعمل لديكم اليوم أي استخدام؟ من يملكه؟</td></tr>
+  </table>
+  <div class="callout warn mt small"><b>أين يقع الخطأ:</b> سؤال بنعم أو لا عن وجود وثيقة. الإجابة «نعم» دائمًا، والوثيقة قد تكون مسودة.</div>
+  <aside class="notes"><p>اطلب من كل مشارك أن يعيد صياغة سؤال موحٍ من عمله. التمرين الإضافي في المختبر يعود إلى هذا.</p></aside>
+</section>
+
+<section class="slide" id="notes-with-ids" data-lo="LO2" data-n="20" data-session="2">
+  <div class="kicker">التدوين</div>
+  <h2>ملاحظة مرقمة اليوم مرجعٌ في ملف الدرجات غدًا</h2>
+  <div class="cols cols-2">
+    <pre class="code" data-file="notes.md"><code>N-HR-03 [قال] «كل المديرين تدربوا على البيانات»
+N-HR-04 [عرض] كشف حضور: 6 من 40 مديرًا
+N-HR-05 [لوحظ] لم يُذكر قياس لما بعد التدريب</code></pre>
+    <ul class="bullets">
+      <li><b>رقم ثابت</b> لا يتغير حين تعيد ترتيب الملاحظات</li>
+      <li><b>نص الادعاء بين علامتي تنصيص</b> حين يهم</li>
+      <li><b>ملاحظة واحدة لفكرة واحدة</b>، ليستشهد بها ادعاء واحد</li>
+      <li><b>لا اسم لغير المحاوَر</b>؛ اكتب الدور</li>
+    </ul>
+  </div>
+  <div class="caption">مثال موازٍ من إدارة موارد بشرية افتراضية.</div>
+  <aside class="notes"><p>الأرقام هي ما يجعل التجميع بالنموذج قابلًا للفحص في الجلسة الرابعة: كل ادعاء مجمَّع يستشهد برقم، وتفتح الرقم لترى هل يقول ذلك.</p></aside>
+</section>
+
+<section class="slide" id="role-play-protocol" data-lo="LO2" data-n="21" data-session="2">
+  <div class="kicker">كيف يسير المختبر</div>
+  <h2>ثلاثة أدوار تتبادلونها: محاور، ومدوّن، ومؤدٍّ للدور</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>المحاور</h4><p class="small mb0">يسأل من الدليل، ويطلب المثال والمخرج. لا يقرأ بطاقة الدور.</p></div>
+    <div class="card c-cyan"><h4>المدوّن</h4><p class="small mb0">يكتب الملاحظات بأرقامها وعلاماتها، والادعاء بنصه.</p></div>
+    <div class="card c-coral"><h4>مؤدي الدور</h4><p class="small mb0">يقول ما في بطاقته، ولا يكشف ما فيها إلا لسؤال محدد.</p></div>
+  </div>
+  <div class="callout note mt"><b>المقابلتان:</b> مدير العمليات والشبكات، ثم مديرة خدمة العملاء والفوترة، 15 دقيقة لكل منهما.</div>
+  <aside class="notes"><p>إن كان العدد لا يقسم على ثلاثة فأدِّ أحد الدورين بنفسك. انتبه لمؤدي الدور الذي يكشف كل البطاقة من أول سؤال: ذكّره بأن المحاوَر الحقيقي لا يتطوع بما لا يُسأل عنه.</p></aside>
+</section>
+
+<section class="slide" id="check-interview-followup" data-lo="LO2" data-n="22" data-session="2">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>مدير يقول «جودتنا ممتازة»</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-interview-followup-q1">
+    <p class="lead">في مقابلة مع مدير المستودعات في شركة توزيع افتراضية قال: «جودة بيانات المخزون ممتازة، نحن في المستوى 4.» ما خطوتك التالية؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يعامل القول دليلًا كافيًا: المستوى يحتاج مخرجًا يثبت التشغيل والقياس" data-k="أ">أسجّل المستوى 4 كما قال، لأنه صاحب الإدارة والأعلم بها</div>
+      <div class="opt" data-why="يخلط بين الشك والتحقق: الحكم بالخفض قبل الدليل انطباع معاكس، لا دليل" data-k="ب">أخفّض الدرجة سلفًا لأن المديرين يبالغون</div>
+      <div class="opt" data-ok data-k="ج">أسأل عن آخر خطأ اكتُشف ومن صحّحه، وأطلب رؤية القياس</div>
+      <div class="opt" data-why="يؤجل الدليل إلى غير موضعه: الاستبانة تقيس ما يراه الموظفون، لا ما تقيسه الإدارة" data-k="د">أنتقل إلى السؤال التالي وأتحقق من قوله لاحقًا في الاستبانة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> القول مصدر يُتحقق منه. سؤال «آخر مرة، ومن، وأرني» يحوّله إلى مثال ومخرج، أو يكشف أنه لا مخرج.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. ستجد الموقف نفسه بعد دقائق في المختبر. لا تقل ذلك؛ دعهم يتعرفون عليه.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-2" data-auto="lab" data-lab="1.2" data-label="المختبر 1.2" data-n="23" data-session="2">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.2 · 60 دقيقة</div><h2>مقابلة مديرَين في تمثيل للأدوار</h2><p class="lead small">في مجموعات ثلاثية: محاور ومدوّن ومؤدٍّ للدور، تجرون مقابلتين مع مدير العمليات ومديرة خدمة العملاء من بطاقتي الدور، دون ذكاء اصطناعي، ثم تقارنون ملاحظاتكم بالملاحظات المرجعية.</p><a class="nb" href="../labs/D1_2_interviews.html">D1_2_interviews.html</a></div><ul class="checklist"><li>وزّعوا الأدوار واقرؤوا دليل المقابلة <span class="min">8 د</span></li><li>المقابلة الأولى: مدير العمليات <span class="min">15 د</span></li><li>المقابلة الثانية: مديرة خدمة العملاء، بأدوار متبادلة <span class="min">15 د</span></li><li>رقّم الملاحظات وعلّم كل واحدة: قال، عرض، لوحظ <span class="min">12 د</span></li><li>قارن بالملاحظات المرجعية: ماذا فاتك؟ <span class="min">10 د</span></li><li class="stretch">✱ إضافي: أعد صياغة سؤالين من أسئلتك كانا يوحيان بالإجابة</li></ul></div>
+  <aside class="notes"><p>تجوّل بين المجموعات واستمع لأسئلة المتابعة. اكتب على السبورة كل مرة تسمع فيها «أرني». في الخطوة 5 وزّع الملاحظات المرجعية (files/start/interview_notes_*.md) لا قبلها. من لم يحضر المقابلة يبدأ الخطوة 4 من الملاحظات المرجعية مع حذف علاماتها.</p></aside>
+</section>
+
+<section class="slide" id="debrief-1-2" data-lo="LO2" data-n="24" data-session="2">
+  <div class="kicker">بعد المختبر 1.2</div>
+  <h2>أكبر الوقائع لم تُقل إلا لمن سأل</h2>
+  <div class="cols cols-2">
+    <table class="t small">
+      <tr><th>الملاحظة</th><th>ما ظهر بسؤال المتابعة</th></tr>
+      <tr><td>N-OPS-04</td><td>نحو ثلث القراءات تقديرية</td></tr>
+      <tr><td>N-OPS-05</td><td>كل منطقة تصحح بطريقتها</td></tr>
+      <tr><td>N-OPS-09</td><td>نموذج التسربات لم يُشغَّل ولم يُختبر</td></tr>
+      <tr><td>N-CS-02</td><td>قياس الجودة جهد فردي يتوقف بالغياب</td></tr>
+      <tr><td>N-CS-05</td><td>المساعد الآلي بلا مالك</td></tr>
+    </table>
+    <div class="stack">
+      <div class="stat center"><div class="big">2 من 20</div><div class="lbl">ملاحظة [عرض] في المرجع، مقابل 16 قولًا تنتظر أدلتها</div></div>
+      <div class="callout warn small"><b>N-OPS-01:</b> «المستوى 4» بلا أي مخرج خلفه، ولم يُعرض إلا لوحة التحكم.</div>
+    </div>
+  </div>
+  <aside class="notes"><p>الأرقام من الملاحظات المرجعية (check.py 1.2): عشرون ملاحظة، 16 [قال] و2 [عرض] و2 [لوحظ]. اسأل كل مجموعة: كم من الخمس في الجدول التقطتم؟ من التقط ثلاثًا أو أكثر سأل المتابعة جيدًا.</p></aside>
+</section>
+
+<!-- الجلسة 3 -->
+
+<section class="slide section" id="s3" data-auto="section" data-session="3" data-n="25">
+  <div class="kicker">الجلسة 3</div>
+  <h1>الوثائق والجولات الميدانية</h1>
+  <ul class="bullets outcomes"><li>تفرز حزمة وثائق بحسب الحالة والتاريخ والاعتماد ودليل التشغيل</li><li>تسجّل كل دليل ببُعده وقوته واتجاهه</li><li>تكتشف تعارض الوثيقة مع قول المدير وتطلب ما ينقص</li></ul>
+  <div class="sess-no">03</div>
+</section>
+
+<section class="slide" id="request-operating-records" data-lo="LO2" data-n="26" data-session="3">
+  <div class="kicker">طلب الوثائق</div>
+  <h2>اطلب ما يثبت التشغيل، لا ما يثبت النية وحدها</h2>
+  <div class="cols cols-2">
+    <div class="card c-coral"><h4>وثائق النية</h4><ul class="bullets small mb0"><li>السياسة</li><li>الاستراتيجية</li><li>الخطة</li><li>الميثاق</li></ul></div>
+    <div class="card c-teal"><h4>وثائق التشغيل</h4><ul class="bullets small mb0"><li>المحاضر المتتالية</li><li>سجل التشغيل أو المراقبة</li><li>تقرير القياس الدوري</li><li>مستخلص من النظام</li></ul></div>
+  </div>
+  <div class="callout tip mt"><b>صيغة الطلب:</b> «السياسة، وآخر ثلاثة مخرجات تثبت تطبيقها.» هكذا تعرف من الطلب نفسه هل الممارسة موجودة.</div>
+  <aside class="notes"><p>جهات كثيرة ترسل للمقيّم ملف السياسات كاملًا. هذا مفيد لكنه نصف القصة. طلب «آخر ثلاثة مخرجات» يكشف في يوم واحد ما تكشفه المقابلات في أسبوع.</p></aside>
+</section>
+
+<section class="slide" id="four-questions-document" data-lo="LO2" data-n="27" data-session="3">
+  <div class="kicker">فرز الوثيقة</div>
+  <h2>أربعة أسئلة لكل وثيقة قبل أن تقرأ محتواها</h2>
+  <div class="cols cols-4 gap-s">
+    <div class="card c-teal"><h4>الحالة</h4><p class="small mb0">معتمدة أم مسودة؟ من اعتمدها؟</p></div>
+    <div class="card c-cyan"><h4>التاريخ</h4><p class="small mb0">حديثة أم تصف أنظمة تغيّرت؟</p></div>
+    <div class="card c-coral"><h4>النوع</h4><p class="small mb0">ممارسة أم نية؟</p></div>
+    <div class="card c-purple"><h4>المنهج</h4><p class="small mb0">إن كان فيها رقم: كيف حُسب ومن حسبه؟</p></div>
+  </div>
+  <div class="callout warn mt"><b>أين يقع الخطأ:</b> رقم لامع في عرض تقديمي، بلا منهج ولا مصدر، يُنقل إلى ملف الدرجات كأنه قياس.</div>
+  <aside class="notes"><p>السؤال الرابع أهمها في التقارير التي يكتبها المورّدون: نسبة رضا محسوبة ممن ضغطوا زر الإعجاب ليست رضا العملاء. لا تذكر وثائق شركة نمير هنا.</p></aside>
+</section>
+
+<section class="slide" id="evidence-strength-ladder" data-lo="LO2" data-n="28" data-session="3">
+  <div class="kicker">قوة الدليل</div>
+  <h2>من الادعاء إلى القياس المتكرر: خمس درجات من القوة</h2>
+  <div class="ladder" style="--n:5">
+    <div class="rung c-coral off"><b>ادعاء</b>بلا منهج ولا تاريخ<small>ليس دليلًا</small></div>
+    <div class="rung c-amber off"><b>نية</b>مسودة، دعوة، خطة<small>ضعيف</small></div>
+    <div class="rung c-purple off"><b>وجود</b>وثيقة معتمدة<small>متوسط</small></div>
+    <div class="rung c-cyan off"><b>تشغيل</b>سجل أو محاضر متتالية<small>قوي</small></div>
+    <div class="rung c-teal on"><b>قياس</b>مؤشر دوري يُراجع<small>قوي جدًا</small></div>
+  </div>
+  <aside class="notes"><p>هذا السلم هو عمود «القوة» في سجل الأدلة. المهم: الوثيقة المعتمدة في المنتصف لا في الأعلى. ما فوقها يثبت أن أحدًا يعمل بها.</p></aside>
+</section>
+
+<section class="slide" id="walkthrough-adds" data-lo="LO2" data-n="29" data-session="3">
+  <div class="kicker">الجولة الميدانية</div>
+  <h2>الجولة ترى العملية تجري، فتحسم ما تختلف فيه الوثيقة والمقابلة</h2>
+  <div class="cols cols-2">
+    <ul class="bullets">
+      <li>اطلب أن ترى خطوة واحدة تُنفَّذ أمامك، لا عرضًا عنها</li>
+      <li>اختر الخطوة التي تتعارض فيها الأدلة</li>
+      <li>دوّن ما رأيته بعلامة [لوحظ]، برقم كالمقابلة</li>
+      <li>اسأل المنفّذ لا المدير: «ماذا تفعل حين يفشل هذا؟»</li>
+    </ul>
+    <div class="card c-teal"><h4>مثال موازٍ</h4><p class="small mb0">في بلدية افتراضية تقول السياسة إن الطلبات تُصنّف آليًا. في الجولة رأى المقيّم موظفًا يعيد تصنيف ثلث الطلبات يدويًا كل صباح.</p></div>
+  </div>
+  <aside class="notes"><p>في هذا المقرر لا نجري جولة فعلية؛ نخطط لها في التمرين الإضافي للمختبر. لكن عدم إجرائها يؤثر في مستوى الثقة لاحقًا: بُعد لم يُرَ تشغيله إلا في وثيقة يبقى بثقة متوسطة.</p></aside>
+</section>
+
+<section class="slide" id="evidence-log-fields" data-lo="LO2" data-n="30" data-session="3">
+  <div class="kicker">سجل الأدلة</div>
+  <h2>التعارض بين المصادر نتيجة تُسجَّل، لا إزعاج يُتجاوز</h2>
+  <table class="t small">
+    <tr><th>الرمز</th><th>البُعد</th><th>ما يثبته</th><th>القوة</th><th>الاتجاه</th><th>يتعارض مع</th></tr>
+    <tr><td>V07</td><td>الجودة</td><td>تقرير أخطاء القيد الشهري منذ سنتين</td><td>قوي</td><td>يرفع</td><td></td></tr>
+    <tr><td>V11</td><td>بيانات البحث</td><td>سياسة إدارة البيانات البحثية، مسودة</td><td>ضعيف</td><td>يخفض</td><td>N-RES-02</td></tr>
+    <tr class="hl"><td>N-RES-02</td><td>بيانات البحث</td><td>«السياسة معتمدة منذ عام»</td><td>قول</td><td></td><td>V11</td></tr>
+  </table>
+  <div class="caption">مثال موازٍ لجامعة افتراضية.</div>
+  <div class="callout tip mt small"><b>القاعدة:</b> الوثيقة تحسم حالتها هي. السياسة مسودة كما في الملف، ولو قال المدير غير ذلك.</div>
+  <aside class="notes"><p>عمود «يتعارض مع» هو ما يجعل الإحاطة قوية لاحقًا: حين يعترض الراعي على درجة، تجيب بالتعارض المسجل لا بالذاكرة.</p></aside>
+</section>
+
+<section class="slide" id="check-document-strength" data-lo="LO2" data-n="31" data-session="3">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>أي وثيقة ترفع الدرجة؟</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-document-strength-q1">
+    <p class="lead">تقيّم جودة البيانات في صندوق إقراض افتراضي. أي هذه الوثائق أقوى دليل على أن الجودة تُدار فعلًا؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يخلط بين الوجود والتشغيل: الاعتماد يثبت أن السياسة موجودة، لا أن أحدًا يعمل بها" data-k="أ">سياسة جودة البيانات المعتمدة من مجلس الإدارة</div>
+      <div class="opt" data-ok data-k="ب">تقارير القياس الشهرية للسنة الأخيرة، مع ما صُحّح</div>
+      <div class="opt" data-why="يعامل الادعاء دليلًا: رقم في عرض بلا منهج ولا مصدر لا يُقاس عليه" data-k="ج">عرض قُدّم لمجلس الإدارة يقول إن دقة البيانات بلغت 98%</div>
+      <div class="opt" data-why="يخلط بين التوعية والممارسة: الدعوة تثبت أن ورشة ستُعقد، لا أن الجودة تُدار" data-k="د">دعوة الموظفين إلى ورشة «أسبوع الجودة»</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> سجل متكرر يثبت التشغيل والقياس معًا. السياسة تثبت الوجود، والعرض ادعاء، والدعوة نية.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ب. إن انقسمت القاعة بين أ وب، فارجع إلى سلم القوة: الوثيقة المعتمدة في منتصفه.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-3" data-auto="lab" data-lab="1.3" data-label="المختبر 1.3" data-n="32" data-session="3">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.3 · 40 دقيقة</div><h2>مراجعة حزمة الوثائق</h2><p class="lead small">تفرز عشرين وثيقة من شركة نمير، وتسجّل ما يثبته كل منها ولأي بُعد وبأي قوة، وتطابقها بأقوال المديرين، ثم تكتب طلبين لوثائق ناقصة.</p><a class="nb" href="../labs/D1_3_documents.html">D1_3_documents.html</a></div><ul class="checklist"><li>افرز الوثائق العشرين: الحالة والتاريخ والاعتماد <span class="min">10 د</span></li><li>سجّل الأدلة في سجل الأدلة: البُعد والقوة والاتجاه <span class="min">15 د</span></li><li>طابق الوثائق بثلاثة أقوال من المقابلات <span class="min">8 د</span></li><li>اكتب طلبين لوثائق تنقصك <span class="min">4 د</span></li><li>قارن بالمرجع <span class="min">3 د</span></li><li class="stretch">✱ إضافي: اختر وثيقة واحدة واكتب كيف تتحقق منها في جولة ميدانية</li></ul></div>
+  <aside class="notes"><p>البداية من الفهرس والوثائق والملاحظات المرجعية؛ لا يحتاج المختبر ملاحظات 1.2. راقب من يقرأ الوثائق بالترتيب كاملة: الفرز بالأسئلة الأربعة أولًا يوفّر نصف الوقت. الأرقام المرجعية في details للمدرب في صفحة المختبر.</p></aside>
+</section>
+
+<section class="slide" id="debrief-1-3" data-lo="LO2" data-n="33" data-session="3">
+  <div class="kicker">بعد المختبر 1.3</div>
+  <h2>أربعة أرقام من الحزمة تنقض الصورة اللامعة</h2>
+  <div class="cols cols-4 gap-s">
+    <div class="stat"><div class="big">41 من 312</div><div class="lbl">أصلًا في دليل البيانات لها مالك (D08)</div></div>
+    <div class="stat"><div class="big">38%</div><div class="lbl">من القراءات تقديرية في الربع الثالث (D07)</div></div>
+    <div class="stat"><div class="big">2 من 6</div><div class="lbl">اجتماعات للجنة الحوكمة عُقدت (D04)</div></div>
+    <div class="stat"><div class="big">86%</div><div class="lbl">مؤشَّر عليها في قائمة الامتثال، و40% منها بلا دليل (D12)</div></div>
+  </div>
+  <div class="callout warn mt"><b>ليست أدلة:</b> D19 (ادعاء «المستوى 4»)، وD20 (دعوة)، وD09 (معمارية 2019). <b>مسودتان:</b> D02 وD05.</div>
+  <aside class="notes"><p>الأرقام من check.py 1.3، محسوبة من نص الوثائق. أقوى دليل تشغيل في الحزمة D10: سجل تكامل الفوترة، 29 تشغيلًا ناجحًا من 30. قل للمشاركين: احفظوه، فستحتاجونه في المختبر 1.5. ولا تقل أي درجة يسندها.</p></aside>
+</section>
+
+<!-- الجلسة 4 -->
+
+<section class="slide section" id="s4" data-auto="section" data-session="4" data-n="34">
+  <div class="kicker">الجلسة 4</div>
+  <h1>الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات</h1>
+  <ul class="bullets outcomes"><li>تحسب نتائج استبانة لكل إدارة وتحجب المجموعات الصغيرة</li><li>تقيس تضخم التقييم الذاتي بمقارنته بالاستبانة والوثائق</li><li>ترمّز ملاحظات المقابلات وتجمعها بنموذج، وتحذف كل ادعاء لا يستشهد بملاحظة</li></ul>
+  <div class="sess-no">04</div>
+</section>
+
+<section class="slide" id="survey-behaviour-items" data-lo="LO1 LO2" data-n="35" data-session="4">
+  <div class="kicker">بنود الاستبانة</div>
+  <h2>اسأل عن سلوك يعرفه الموظف، لا عن رأيه في الجهة</h2>
+  <table class="t">
+    <tr><th>بند رأي</th><th>بند سلوك</th></tr>
+    <tr><td>الشركة تهتم بجودة البيانات</td><td>حين أجد خطأ في البيانات أعرف لمن أبلغ عنه</td></tr>
+    <tr><td>البيانات مهمة في عملنا</td><td>يُطلب مني أن أدعم قراراتي بالبيانات</td></tr>
+    <tr><td>نحن مستعدون للذكاء الاصطناعي</td><td>أعرف لمن أرجع إذا أخطأ نظام ذكاء اصطناعي في عملي</td></tr>
+  </table>
+  <div class="callout note mt small"><b>الأداة:</b> أي أداة استبانات تكفي، مثل <span class="en">LimeSurvey</span> أو <span class="en">Microsoft Forms</span>. المهم أن تحفظ الإدارة لكل إجابة، لا الاسم.</div>
+  <aside class="notes"><p>بند الرأي يقيس الولاء أو المزاج. بند السلوك يقيس الممارسة كما يعيشها الموظف، فيصلح دليلًا من نوع ثالث بجانب المقابلة والوثيقة.</p></aside>
+</section>
+
+<section class="slide" id="minimum-group-size" data-lo="LO2" data-n="36" data-session="4">
+  <div class="kicker">مسؤولية تجاه الأفراد</div>
+  <h2>المجموعة الصغيرة تُحجب لحماية أفرادها، وتُقرأ بحذر لصغرها</h2>
+  <div class="cols cols-2">
+    <div class="stack">
+      <div class="card c-coral"><h4>الحجب للخصوصية</h4><p class="small mb0">لا تُعرض نتيجة مجموعة أقل من خمسة: في فريق من أربعة يُعرف من أجاب بماذا.</p></div>
+      <div class="card c-cyan"><h4>الحذر للدقة</h4><p class="small mb0">فوق الخمسة يبقى المتوسط متقلبًا. الحجب لا يجعل الرقم دقيقًا.</p></div>
+    </div>
+    <div class="stack">
+      <p class="small mb0"><b>مجموعتان من المجتمع نفسه:</b> كم مرة يختلف متوسطاهما بنصف درجة أو أكثر بالصدفة؟</p>
+      <div class="bars">
+        <div class="row"><span>5 في كل مجموعة</span><div class="bar c-coral" style="--w:48%"></div><span class="val">48%</span></div>
+        <div class="row"><span>10 في كل مجموعة</span><div class="bar c-amber" style="--w:37%"></div><span class="val">37%</span></div>
+        <div class="row"><span>30 في كل مجموعة</span><div class="bar c-teal" style="--w:10%"></div><span class="val">10%</span></div>
+      </div>
+      <div class="caption">محاكاة بعينات عشوائية على مقياس من 1 إلى 5، 50,000 تكرار لكل حجم.</div>
+    </div>
+  </div>
+  <aside class="notes"><p>قاعدتان لا قاعدة واحدة. الأولى من سياسة المقرر للاستخدام المسؤول: لا عرض لمجموعة تحت حد أدنى، وفي شركة نمير الحد خمسة. الثانية من المحاكاة: مجموعتان متطابقتان في الحقيقة، خمسة في كل منهما، تختلفان بنصف درجة أو أكثر في نحو نصف المرات. لذلك نمير لا تقرأ الفرق بين إدارتين نتيجة إلا وفي كل منهما 30 على الأقل.</p><p>المحاكاة: توزيع ثابت للإجابات (12% و28% و32% و20% و8% للدرجات 1 إلى 5)، وبذرة ثابتة، في ملاحظات عمل المقرر.</p></aside>
+</section>
+
+<section class="slide" id="self-assessment-inflation" data-lo="LO2" data-n="37" data-session="4">
+  <div class="kicker">تضخم التقييم الذاتي</div>
+  <h2>من يقيّم إدارته يقيس ما ينويه، لا ما يحدث</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>النية</h4><p class="small mb0">المدير يعرف السياسة التي اعتمدها، ولا يرى أنها لا تُطبق في الميدان.</p></div>
+    <div class="card c-cyan"><h4>الموقع</h4><p class="small mb0">التقييم يُقرأ تقييمًا لأدائه، فيميل إلى الأعلى.</p></div>
+    <div class="card c-coral"><h4>المقياس</h4><p class="small mb0">وصف المستوى عام، فيقرأ كل مدير نفسه في أعلاه.</p></div>
+  </div>
+  <div class="callout tip mt"><b>ما تفعله:</b> لا ترفض التقييم الذاتي. ضعه بجانب الاستبانة والوثائق، واحسب الفرق لكل بُعد: الفرق نفسه نتيجة تُعرض على الراعي.</div>
+  <aside class="notes"><p>لا نضع رقمًا عامًا للتضخم هنا: الرقم الذي يهمنا هو رقم شركة نمير، وستحسبه بنفسك في المختبر. اسأل القاعة: من رأى تقييمًا ذاتيًا في جهته جاء أعلى من نتيجة تدقيق لاحق؟</p></aside>
+</section>
+
+<section class="slide" id="pseudonymise-first" data-lo="LO2" data-n="38" data-session="4">
+  <div class="kicker">قبل أن تخرج الملاحظات من جهازك</div>
+  <h2>رمّز الأسماء، ثم تحقق، ثم أرسل</h2>
+  <div class="flow">
+    <div class="step c-teal"><b>1 · انسخ</b>الملاحظات إلى ملف جديد</div>
+    <div class="arrow">←</div>
+    <div class="step c-cyan"><b>2 · استبدل</b>كل اسم بدوره: «المحللة»، «المهندسة (أ)»</div>
+    <div class="arrow">←</div>
+    <div class="step c-coral"><b>3 · ابحث</b>عن كل اسم مرة أخرى؛ صفر نتائج</div>
+    <div class="arrow">←</div>
+    <div class="step c-purple"><b>4 · أرسل</b>إلى النموذج المعتمد في جهتك فقط</div>
+  </div>
+  <div class="callout warn mt"><b>الأسماء تختبئ:</b> اسم أول وحده، أو لقب، أو «زوجة المدير»، أو وصف لا يطابقه إلا شخص واحد.</div>
+  <aside class="notes"><p>هذا من سياسة الاستخدام المسؤول في المقرر: ملاحظات المقابلات تُرمَّز قبل أن يجمعها نموذج. الخطوة 3 هي التي ينساها الناس. والترميز لا يجعل النص مجهول الهوية تمامًا: وصف «مديرة خدمة العملاء» يدل على شخص واحد، لذلك يبقى النموذج المعتمد في الجهة شرطًا.</p></aside>
+</section>
+
+<section class="slide" id="synthesis-cites-notes" data-lo="LO2" data-n="39" data-session="4">
+  <div class="kicker">التجميع بنموذج مرشد</div>
+  <h2>كل ادعاء مجمَّع يستشهد بملاحظة، وما لا يستشهد يُحذف</h2>
+  <div class="cols cols-2">
+    <div class="prompt s" data-tool="نموذج مستضاف + ملاحظات مرمّزة">اجمع هذه الملاحظات في ادعاءات قصيرة بحسب الأبعاد. لكل ادعاء اذكر رقم الملاحظة التي تقوله بنصها، مثل [N-HR-04]. لا تكتب ادعاءً لا تجده في الملاحظات، ولا توصية، ولا درجة.</div>
+    <div class="stack">
+      <div class="callout warn small"><b>بلا رقم:</b> احذفه، ولو بدا صحيحًا.</div>
+      <div class="callout warn small"><b>رقم لا يقول ذلك:</b> افتح الملاحظة. «تدعم الإدارة» من ملاحظة تقول «بمبادرة فردية» تُحذف.</div>
+      <div class="callout warn small"><b>توصية:</b> ليست ادعاءً عن الواقع. مكانها خارطة الطريق، غدًا.</div>
+    </div>
+  </div>
+  <aside class="notes"><p>سياسة المقرر: الذكاء الاصطناعي مرشد في تجميع الملاحظات، على أن يستشهد كل ادعاء بملاحظة. النموذج يوفر الوقت في الترتيب والتجميع، والمقيّم يبقى مسؤولًا عن كل ادعاء. عرض حي: إن كان النموذج متاحًا، الصق الأمر مع ملاحظات المثال الموازي (N-HR) وافتح أول رقم يعيده.</p></aside>
+</section>
+
+<section class="slide" id="ai-policy-three-modes" data-lo="LO2" data-n="40" data-session="4">
+  <div class="kicker">سياسة الذكاء الاصطناعي في هذا المقرر</div>
+  <h2>ثلاثة أوضاع، لكل نشاط وضعه</h2>
+  <table class="t">
+    <tr><th>الوضع</th><th>النشاط</th><th>الشرط</th></tr>
+    <tr><td><b>دون ذكاء اصطناعي</b></td><td>المقابلات، والتقييم المراقب لبُعدين</td><td>حكمك على الأدلة بيدك</td></tr>
+    <tr><td><b>مرشد</b></td><td>تجميع ملاحظات المقابلات</td><td>كل ادعاء يستشهد بملاحظة، بعد ترميز الأسماء</td></tr>
+    <tr><td><b>كامل</b></td><td>خارطة الطريق وشرائح الإحاطة</td><td>تدافع عنهما مباشرة أمام الراعي</td></tr>
+  </table>
+  <aside class="notes"><p>اربط كل وضع بما يقيسه: التقييم المراقب يقيس حكمك، فلا مساعد فيه. الإحاطة تقيس قدرتك على الدفاع، فلا يهم من كتب الشريحة الأولى.</p></aside>
+</section>
+
+<section class="slide" id="check-small-group" data-lo="LO2" data-n="41" data-session="4">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>إدارة من أربعة، ونتيجة لافتة</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-small-group-q1">
+    <p class="lead">في استبانة هيئة صحية افتراضية أجاب أربعة موظفين من وحدة الابتكار، ومتوسطهم في بند الذكاء الاصطناعي 4.5 من 5، وهو الأعلى. ماذا تكتب في التقرير؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يقدّم الرقم اللافت على الخصوصية: في فريق من أربعة يُعرف من أجاب" data-k="أ">أن وحدة الابتكار الأعلى ثقة في الذكاء الاصطناعي</div>
+      <div class="opt" data-why="يظن أن ضم الوحدة يحل المشكلة دون إفصاح: الحجب قاعدة تُكتب، لا تعديل صامت" data-k="ب">أدمج الوحدة في إدارة أخرى دون ذكر ذلك</div>
+      <div class="opt" data-why="يحسب أن الدقة وحدها هي المشكلة: الحذر في القراءة لا يغني عن الحجب" data-k="ج">أذكر متوسطها مع تنبيه إلى صغر العينة</div>
+      <div class="opt" data-ok data-k="د">«أقل من 5» مكان أرقامها، ولا أذكرها في أي جملة من التقرير</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> حد الحجب يحمي الأفراد في المجموعات الصغيرة. ولا يُلتف عليه بذكر النتيجة في جملة.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: د. إن اختار أحد «ج» فارجع إلى الفرق بين القاعدتين: الحجب للخصوصية، والحذر للدقة.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-4" data-auto="lab" data-lab="1.4" data-label="المختبر 1.4" data-n="42" data-session="4">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.4 · 40 دقيقة</div><h2>الاستبانة والتقييم الذاتي وتجميع الملاحظات</h2><p class="lead small">تحسب متوسطات الاستبانة لكل إدارة مع حجب المجموعات الأقل من خمسة، وتقارن تقييم المديرين الذاتي بالأدلة، ثم ترمّز ملاحظات المقابلتين وتجمعها بنموذج مستضاف وتحذف ما لا يستشهد بملاحظة.</p><a class="nb" href="../labs/D1_4_survey_synthesis.html">D1_4_survey_synthesis.html</a></div><ul class="checklist"><li>احسب جدول الإدارات بعدد المستجيبين واحجب الصغيرة <span class="min">10 د</span></li><li>قارن التقييم الذاتي للمديرين بالاستبانة والوثائق <span class="min">8 د</span></li><li>رمّز الأسماء في الملاحظات <span class="min">7 د</span></li><li>اجمع الملاحظات بنموذج مستضاف واحذف ما لا يستشهد بملاحظة <span class="min">12 د</span></li><li>دوّن ما حذفته ولماذا <span class="min">3 د</span></li><li class="stretch">✱ إضافي: اكتب بندين للاستبانة يقلّلان التضخم: سلوك محدد بدل رأي عام</li></ul></div>
+  <aside class="notes"><p>الخطوة 1 بجدول محوري. من يتعثر في استيراد الملف: استيراد بترميز UTF-8. في الخطوة 4، إن تعطّل النموذج المستضاف أو بلغ حده المجاني، وزّع ادعاءات النموذج البديل (solutions/standin.json) مطبوعة. انتبه لمن يرسل الملاحظات قبل الترميز: أوقفه.</p></aside>
+</section>
+
+<section class="slide" id="debrief-1-4" data-lo="LO2" data-n="43" data-session="4">
+  <div class="kicker">بعد المختبر 1.4</div>
+  <h2>المديرون يضعون الجودة مع الأعلى، والموظفون يضعونها قبل الأخيرة</h2>
+  <div class="cols cols-2">
+    <div class="stack">
+      <table class="t small">
+        <tr><th>البُعد</th><th class="num">المديرون (0 إلى 5)</th><th class="num">الموظفون (1 إلى 5)</th></tr>
+        <tr><td>D4 الحماية</td><td class="num">2.9</td><td class="num">2.55</td></tr>
+        <tr class="hl"><td>D2 الجودة</td><td class="num">2.7</td><td class="num">2.46</td></tr>
+        <tr><td>D1 الحوكمة</td><td class="num">2.7</td><td class="num">2.66</td></tr>
+        <tr><td>D6 الذكاء الاصطناعي</td><td class="num">1.9</td><td class="num">2.17</td></tr>
+      </table>
+      <div class="caption">الجودة خامسة من ستة عند الموظفين، والوثائق: سياسة مسودة، و38% من القراءات تقديرية. مدير العمليات يمنحها 4.</div>
+    </div>
+    <div class="stack">
+      <div class="callout warn small"><b>مكتب البيانات:</b> أربعة مستجيبين، فيُكتب «أقل من 5».</div>
+      <div class="callout warn small"><b>التجميع:</b> ثمانية ادعاءات، اثنان بلا رقم ملاحظة، وواحد يستشهد بـ N-OPS-08 وهي تقول «بمبادرة منها». يبقى خمسة.</div>
+    </div>
+  </div>
+  <aside class="notes"><p>الأرقام من check.py 1.4. متوسطات كل الموظفين من 236 إجابة: D1 2.66، D2 2.46، D3 2.62، D4 2.55، D5 2.58، D6 2.17؛ ومتوسط المديرين D3 2.7 وD5 2.6. لا تطرح المقياسين أحدهما من الآخر: قارن الترتيب. ولا تذكر الدرجة المرجعية هنا؛ الفرق عنها يُعرض بعد المختبر 1.5. التجميع بالنموذج البديل، لأن المقرر بُني دون مفتاح نموذج يعمل؛ جرّبه بنموذج حقيقي قبل الدفعة.</p></aside>
+</section>
+
+<!-- الجلسة 5 -->
+
+<section class="slide section" id="s5" data-auto="section" data-session="5" data-n="44">
+  <div class="kicker">الجلسة 5</div>
+  <h1>تثليث الأدلة ومنح الدرجات ومعايرتها</h1>
+  <ul class="bullets outcomes"><li>تمنح كل بُعد درجة من أدلة من نوعين على الأقل وتذكر مراجعها</li><li>تحدد مستوى الثقة بقواعد مكتوبة</li><li>تعاير درجاتك مع زميل وتحسم الخلاف بالأدلة</li></ul>
+  <div class="sess-no">05</div>
+</section>
+
+<section class="slide" id="triangulation-three-sources" data-lo="LO2" data-n="45" data-session="5">
+  <div class="kicker">التثليث</div>
+  <h2>درجة البُعد تقف على ثلاثة أنواع من الأدلة، لا على أعلاها صوتًا</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>ما قيل</h4><p class="small mb0">المقابلات: النية والتفسير، والادعاءات التي تنتظر دليلها.</p></div>
+    <div class="card c-cyan"><h4>ما كُتب</h4><p class="small mb0">الوثائق: الحالة والتاريخ، والتشغيل إن وُجد سجله.</p></div>
+    <div class="card c-coral"><h4>ما يعيشه الموظفون</h4><p class="small mb0">الاستبانة: الممارسة كما تُرى من الميدان.</p></div>
+  </div>
+  <div class="callout tip mt"><b>حين تتفق الثلاثة</b> تكون الثقة عالية. <b>وحين تختلف</b> فالاختلاف نفسه نتيجة: من يرى ماذا، ولماذا.</div>
+  <aside class="notes"><p>الجولة الميدانية نوع رابع حين تتاح. في شركة نمير لم تُجرَ جولة، وهذا سيظهر في مستوى الثقة لبعض الأبعاد.</p></aside>
+</section>
+
+<section class="slide" id="scale-and-rules" data-lo="LO2" data-n="46" data-session="5">
+  <div class="kicker">مقياس المقرر وقواعده</div>
+  <h2>المقياس نفسه الذي عرفته في LDS-DMG-101، وقاعدة جديدة: دليلان من نوعين</h2>
+  <div class="cols cols-2">
+    <table class="t small">
+      <tr><th>المستوى</th><th>الاسم</th></tr>
+      <tr><td>0</td><td>غائب</td></tr>
+      <tr><td>1</td><td>مبادرات فردية</td></tr>
+      <tr><td>2</td><td>قيد التأسيس: وثائق أو أدوار دون تشغيل</td></tr>
+      <tr><td>3</td><td>معرَّف ومطبَّق في مجال واحد بدليل تشغيل</td></tr>
+      <tr><td>4</td><td>مُدار ومقيس في معظم المجالات</td></tr>
+      <tr><td>5</td><td>متقدم ومُحسَّن باستمرار</td></tr>
+    </table>
+    <ol class="small">
+      <li>دليلان من نوعين على الأقل، بالرموز</li>
+      <li>المسودة لا ترفع فوق 2، والادعاء ليس دليلًا</li>
+      <li>المعتمد بلا تشغيل امتثال لا نضج: لا يرفع فوق 2</li>
+      <li>قول المدير يُتحقق منه، ولا يكفي وحده</li>
+      <li>بين مستويين: الأدنى، واذكر ما ينقص</li>
+    </ol>
+  </div>
+  <aside class="notes"><p>في LDS-DMG-101 كانت الدرجة تستند إلى وثيقة واحدة. هنا القاعدة الأولى تطلب نوعين، والقاعدة الرابعة جديدة لأن لدينا مقابلات. المقياس دليل خاص بالمقرر، لا مستويات المؤشر الوطني للبيانات.</p></aside>
+</section>
+
+<section class="slide" id="confidence-rules" data-lo="LO2" data-n="47" data-session="5">
+  <div class="kicker">مستوى الثقة</div>
+  <h2>الثقة تقول للراعي كم يعتمد على الدرجة</h2>
+  <table class="t">
+    <tr><th>الثقة</th><th>متى</th></tr>
+    <tr><td><b>عالية</b></td><td>ثلاثة أدلة أو أكثر من نوعين على الأقل تتفق، وأحدها يُظهر الممارسة الفعلية، وجودها أو غيابها</td></tr>
+    <tr><td><b>متوسطة</b></td><td>نوعان مع تعارض لم يُحسم، أو مصدر مهم لم يُستطلع</td></tr>
+    <tr><td><b>منخفضة</b></td><td>نوع واحد، أو الدليل الرئيسي ادعاء</td></tr>
+  </table>
+  <div class="callout note mt"><b>الدرجة والثقة مستقلتان:</b> قد تكون الدرجة 1 بثقة عالية، لأن كل الأدلة تتفق على الضعف.</div>
+  <aside class="notes"><p>كثيرون يخلطون بين الثقة والدرجة، فيظنون أن الدرجة المنخفضة ثقتها منخفضة. العكس شائع: الضعف الواضح تتفق عليه كل المصادر.</p></aside>
+</section>
+
+<section class="slide" id="worked-score-parallel" data-lo="LO2" data-n="48" data-session="5">
+  <div class="kicker">مثال محلول موازٍ</div>
+  <h2>بُعد الجودة في جامعة افتراضية، خطوة خطوة</h2>
+  <div class="flow v">
+    <div class="step c-teal"><b>الأدلة</b>سياسة معتمدة (V03)؛ تقرير أخطاء القيد شهريًا منذ سنتين (V07)؛ «نصحح كل شيء» (N-REG-02)؛ استبانة: 61% يعرفون لمن يبلغون (S-Q04)</div>
+    <div class="arrow">↓</div>
+    <div class="step c-cyan"><b>القواعد</b>V07 تشغيل في مجال واحد، القيد ← المستوى 3 ممكن؛ لا قياس في المجالات الأخرى ← ليس 4</div>
+    <div class="arrow">↓</div>
+    <div class="step c-coral"><b>الدرجة والثقة</b>3، ثقة عالية: ثلاثة أنواع تتفق، وV07 يثبت التشغيل</div>
+  </div>
+  <aside class="notes"><p>امشِ على المثال ببطء. لاحظ أن قول المسجّل «نصحح كل شيء» لم يرفع الدرجة إلى 4؛ رفعها ما ثبت تشغيله فقط. والأرقام هنا افتراضية لجامعة غير شركة نمير.</p></aside>
+</section>
+
+<section class="slide" id="why-assessors-differ" data-lo="LO2" data-n="49" data-session="5">
+  <div class="kicker">المعايرة بين المقيِّمين</div>
+  <h2>المقيّمان يختلفان لأن كلًا منهما صدّق مصدرًا مختلفًا</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>الارتكاز على المدير</h4><p class="small mb0">آخر من تحدثت إليه بثقة يرفع الدرجة.</p></div>
+    <div class="card c-cyan"><h4>الارتكاز على النسبة</h4><p class="small mb0">نسبة امتثال عالية تُقرأ نضجًا.</p></div>
+    <div class="card c-coral"><h4>الهروب إلى الوسط</h4><p class="small mb0">المستوى 2 أو 3 لكل شيء، لأنه لا يُخطّأ بعيدًا.</p></div>
+  </div>
+  <div class="callout tip mt"><b>البروتوكول:</b> كل فرق يُناقش بأقوى دليل عند كل طرف، وتحسمه قاعدة مكتوبة. لا متوسط بين الدرجتين.</div>
+  <aside class="notes"><p>المتوسط بين 1 و3 يعطي 2، وهو حكم على لا شيء. إذا لم تحسم القاعدة الخلاف، يُخفَّض مستوى الثقة ويُكتب الدليل الذي سيحسمه.</p></aside>
+</section>
+
+<section class="slide" id="within-one-is-lenient" data-lo="LO2" data-n="50" data-session="5">
+  <div class="kicker">ما يعنيه «ضمن مستوى واحد»</div>
+  <h2>الاتفاق ضمن مستوى واحد يحدث بالتخمين في نصف المرات</h2>
+  <div class="cols cols-2">
+    <div class="bars">
+      <div class="row"><span>المرجع بين 1 و4</span><div class="bar c-coral" style="--w:50%"></div><span class="val">50%</span></div>
+      <div class="row"><span>المرجع 0 أو 5</span><div class="bar c-amber" style="--w:33%"></div><span class="val">33%</span></div>
+      <div class="row"><span>بُعدان، مرجعاهما 2 و3</span><div class="bar c-cyan" style="--w:25%"></div><span class="val">25%</span></div>
+      <div class="row"><span>اتفاق تام بين مقيّمين يخمّنان</span><div class="bar c-teal" style="--w:17%"></div><span class="val">17%</span></div>
+    </div>
+    <ul class="bullets">
+      <li>مخمّن يختار مستوى عشوائيًا من ستة</li>
+      <li>لذلك لا يكفي الاتفاق ضمن مستوى: <b>تُفحص مراجع الأدلة</b></li>
+      <li>وفي التقييم المراقب يُشترط البُعدان معًا، مع مراجع يفحصها المقيّم</li>
+    </ul>
+  </div>
+  <div class="caption">محاكاة: 200,000 تخمين عشوائي على المقياس من 0 إلى 5، ببذرة ثابتة.</div>
+  <aside class="notes"><p>شرط النجاح في المقرر: درجتا التقييم المراقب كلتاهما ضمن مستوى واحد من المرجع. المحاكاة تبين لماذا لا يكفي الشرط وحده: مخمّن عشوائي يجتازه في بُعدين مرجعاهما 2 و3 مرة من كل أربع. ولذلك يُفحص في التقييم المراقب أيضًا أن المراجع حقيقية وتسند الدرجة.</p><p>المحاكاة في ملاحظات عمل المقرر (sim.py): 0.501 لمرجع بين 1 و4، و0.33 للطرفين، و0.249 لبُعدين، و0.166 للاتفاق التام بين مقيّمين عشوائيين.</p></aside>
+</section>
+
+<section class="slide" id="check-calibration" data-lo="LO2" data-n="51" data-session="5">
+  <div class="kicker">نقطة تحقق</div>
+  <h2>مقيّمان، ودرجتان، وفرق مستويين</h2>
+  <div class="quiz" data-type="single" data-lo="LO2" data-id="check-calibration-q1">
+    <p class="lead">في تقييم صندوق إقراض افتراضي منحتَ بُعد الحماية 2، ومنحه زميلك 4 لأن قائمة الامتثال تقول 90%. لا جولة ولا سجل تشغيل. كيف تحسمان؟</p>
+    <div class="opts">
+      <div class="opt" data-why="يحسم بالحساب لا بالدليل: المتوسط حكم على لا شيء" data-k="أ">نأخذ المتوسط بين الدرجتين، أي 3، ونرفع الثقة لأننا اتفقنا عليه</div>
+      <div class="opt" data-why="يعامل الأقدم أو الأعلى رتبة حكمًا: المعايرة بالأدلة لا بالأقدمية" data-k="ب">يقرر أقدمنا خبرة في التقييم، ونكتب درجته</div>
+      <div class="opt" data-ok data-k="ج">نطبّق قاعدة الوجود بلا تشغيل: 2، ونكتب السجل الذي يرفعها</div>
+      <div class="opt" data-why="يقرأ نسبة الامتثال نضجًا: المؤشَّر عليه يثبت الوجود لا التشغيل" data-k="د">نعتمد 4 لأن نسبة 90% رقم مكتوب في وثيقة</div>
+    </div>
+    <div class="callout tip why"><b>لماذا.</b> قائمة الامتثال تثبت الوجود. بلا دليل تشغيل لا ترتفع الدرجة فوق 2، والفرق تحسمه القاعدة لا المتوسط.</div>
+  </div>
+  <aside class="notes"><p>الإجابة: ج. إن اختار أحد «أ» فاسأله: على أي دليل يقف المستوى 3؟ لا جواب، لأنه لم يأتِ من دليل.</p></aside>
+</section>
+
+<section class="slide lab top" id="lab-1-5" data-auto="lab" data-lab="1.5" data-label="المختبر 1.5" data-n="52" data-session="5">
+  <div class="cols cols-2 mid"><div><div class="lab-tag">المختبر 1.5 · 60 دقيقة</div><h2>تقييم ستة أبعاد ومعايرة الدرجات مع زميل</h2><p class="lead small">من سجل الأدلة المرجعي تمنح كل بُعد من الأبعاد الستة درجة ومستوى ثقة ومراجع أدلة، دون ذكاء اصطناعي، ثم تعاير درجاتك مع زميل أو مع درجات صالح وتتفقان على ملف واحد.</p><a class="nb" href="../labs/D1_5_score_calibrate.html">D1_5_score_calibrate.html</a></div><ul class="checklist"><li>امنح الأبعاد الستة درجاتها وحدك بالمراجع والثقة <span class="min">18 د</span></li><li>بادل ملفك مع زميلك <span class="min">6 د</span></li><li>ناقشا كل فرق بالأدلة لا بالانطباع <span class="min">14 د</span></li><li>اتفقا على ملف واحد وسجّلا سبب كل تعديل <span class="min">10 د</span></li><li>قارنا بالمرجع واحسبا الاتفاق <span class="min">7 د</span></li><li>اكتبا ملاحظة معايرة من ثلاثة أسطر <span class="min">5 د</span></li><li class="stretch">✱ إضافي: اختر البُعد الأضعف ثقة واكتب الدليل الذي يرفع ثقته إلى عالية</li></ul></div>
+  <aside class="notes"><p>دون ذكاء اصطناعي: هذا تدريب على التقييم المراقب. البداية من evidence_log_reference.xlsx وscoring_guide.xlsx للجميع، لا من سجلات المختبر 1.3. من لا زميل له يعاير مع peer_scores.xlsx. لا تعرض الملف المرجعي قبل الخطوة 5.</p></aside>
+</section>
+
+<section class="slide" id="debrief-1-5" data-lo="LO2" data-n="53" data-session="5">
+  <div class="kicker">بعد المختبر 1.5</div>
+  <h2>الملف المرجعي: بُعد واحد في المستوى 3، وبُعدان في المستوى 1</h2>
+  <table class="t small">
+    <tr><th>البُعد</th><th class="num">الدرجة</th><th>الثقة</th><th class="num">صالح</th><th>ما صدّقه صالح</th></tr>
+    <tr><td>D1 الاستراتيجية والحوكمة</td><td class="num">2</td><td>عالية</td><td class="num">2</td><td></td></tr>
+    <tr class="hl"><td>D2 جودة البيانات والبيانات الوصفية</td><td class="num">1</td><td>عالية</td><td class="num">3</td><td>قول مدير العمليات</td></tr>
+    <tr><td>D3 المنصات والتكامل</td><td class="num">3</td><td>متوسطة</td><td class="num">3</td><td></td></tr>
+    <tr class="hl"><td>D4 الحماية والتصنيف</td><td class="num">2</td><td>متوسطة</td><td class="num">4</td><td>قائمة الامتثال 86%</td></tr>
+    <tr><td>D5 القدرات البشرية والثقافة</td><td class="num">2</td><td>عالية</td><td class="num">2</td><td></td></tr>
+    <tr class="hl"><td>D6 استخدام الذكاء الاصطناعي وأثره</td><td class="num">1</td><td>عالية</td><td class="num">2</td><td>عرض مجلس الإدارة</td></tr>
+  </table>
+  <div class="callout warn mt small"><b>اتفاق صالح مع المرجع:</b> تام في 3 من 6، وضمن مستوى في 4 من 6. ومن يقول 2 لكل بُعد يقع ضمن مستوى في الستة كلها.</div>
+  <aside class="notes"><p>الأرقام من check.py 1.5 ومن profile_reference.xlsx. D3 وحده في المستوى 3 بفضل سجل D10، وثقته متوسطة لأن تقنية المعلومات لم تُقابَل ولم تُجرَ جولة. ركّز على السطر الأخير: «2 لكل شيء» يجتاز شرط المستوى الواحد هنا، ولذلك تُفحص المراجع.</p><p>الآن فقط اعرض تضخم التقييم الذاتي عن المرجع (check.py 1.4): D2 +1.7، وD4 وD6 +0.9، وD1 +0.7، وD5 +0.6، وD3 -0.3. أكبر فرق منفرد: مدير العمليات يمنح الجودة 4 والمرجع 1، وهو القول الذي صدّقه صالح فمنحها 3.</p></aside>
+</section>
+
+<section class="slide" id="wrap-up" data-label="الخلاصة" data-n="54" data-session="5">
+  <div class="kicker">ما نأخذه من اليوم الأول</div>
+  <h2>ثلاثة أشياء تبقى</h2>
+  <div class="cols cols-3">
+    <div class="card c-teal"><h4>النموذج يُكيَّف</h4><p class="small mb0">لأسئلة الراعي، ويُسجَّل أصل كل بُعد.</p></div>
+    <div class="card c-cyan"><h4>القول يُتحقق منه</h4><p class="small mb0">«آخر مرة، ومن، وأرني» تحوّل الصفة إلى دليل أو تكشف غيابه.</p></div>
+    <div class="card c-coral"><h4>الدرجة من دليلين</h4><p class="small mb0">من نوعين، بقاعدة مكتوبة، ومعها ثقتها.</p></div>
+  </div>
+  <aside class="notes"><p>اطلب من كل ثنائي جملة واحدة: أي درجة في ملفكم ستدافعون عنها أصعب دفاع أمام الرئيس التنفيذي؟ احتفظ بإجاباتهم لبطاقات الاعتراض غدًا.</p></aside>
+</section>
+
+<section class="slide dark" id="next" data-label="غدًا" data-n="55" data-session="5">
+  <div class="kicker">قبل الغد</div>
+  <h2>غدًا: من الدرجات إلى قرار الراعي</h2>
+  <ul class="bullets">
+    <li>اقرأ موجز الراعي مرة أخرى، وخاصة ما يتوقعه في الذكاء الاصطناعي</li>
+    <li>احتفظ بملف درجاتك وملاحظة المعايرة: ستقارنهما بالمرجع في المختبرات</li>
+    <li>في ختام الغد: ساعة تقييم مراقب دون ذكاء اصطناعي، ثم الإحاطة في ثنائيات</li>
+  </ul>
+  <aside class="notes"><p>ذكّر بأن التقييم المراقب يكون على أدلة جديدة لم يرها أحد، فلا فائدة من حفظ ملف شركة نمير. ما يُحفظ هو القواعد.</p></aside>
+</section>
+</div>
+<script type="application/json" id="academy-data">{"v":1,"engine":"1.0.0","build":{"at":"2026-11-17T22:50:52Z","version":"2027.1.0","commit":"a2c4937"},"course":{"id":"lds-adv-202","code":"LDS-ADV-202","title":"تقييم نضج البيانات والذكاء الاصطناعي وخرائط الطريق","track":"executives","lang":"ar","dir":"rtl","url":"https://sdaiaacademy.github.io/lds-adv-202/","repo":"SDAIAAcademy/lds-adv-202","home":"../index.html"},"deck":{"id":"day1","kind":"day","day":1,"label":"اليوم 1","title":"من النموذج إلى ملف الدرجات","prev":null,"next":"day2.html","md":"day1.md","alt":{}},"sessions":[{"n":1,"label":"الجلسة 1","title":"اختيار نموذج النضج وتكييفه","slide":"s1","outcomes":["تقارن نماذج نضج منشورة بمعايير مكتوبة وتختار أساسًا لتقييم جهة","تكيّف النموذج إلى أبعاد تجيب عن أسئلة الراعي","تبني خطة أدلة يرتبط كل سؤال فيها ببُعد ومصدر"],"minutes":80,"lab":{"id":"1.1","title":"تكييف نموذج والتخطيط للأدلة","minutes":45,"href":"../labs/D1_1_model_plan.html"}},{"n":2,"label":"الجلسة 2","title":"مقابلات تنتج أدلة","slide":"s2","outcomes":["تجري مقابلة تقييم بدليل مكتوب وأسئلة متابعة تطلب مثالًا ومخرجًا","تدوّن ملاحظات مرقمة تميّز بين ما قيل وما عُرض وما لوحظ","تلتقط الادعاء الذي لا يقف خلفه دليل"],"minutes":95,"lab":{"id":"1.2","title":"مقابلة مديرَين في تمثيل للأدوار","minutes":60,"href":"../labs/D1_2_interviews.html"}},{"n":3,"label":"الجلسة 3","title":"الوثائق والجولات الميدانية","slide":"s3","outcomes":["تفرز حزمة وثائق بحسب الحالة والتاريخ والاعتماد ودليل التشغيل","تسجّل كل دليل ببُعده وقوته واتجاهه","تكتشف تعارض الوثيقة مع قول المدير وتطلب ما ينقص"],"minutes":75,"lab":{"id":"1.3","title":"مراجعة حزمة الوثائق","minutes":40,"href":"../labs/D1_3_documents.html"}},{"n":4,"label":"الجلسة 4","title":"الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات","slide":"s4","outcomes":["تحسب نتائج استبانة لكل إدارة وتحجب المجموعات الصغيرة","تقيس تضخم التقييم الذاتي بمقارنته بالاستبانة والوثائق","ترمّز ملاحظات المقابلات وتجمعها بنموذج، وتحذف كل ادعاء لا يستشهد بملاحظة"],"minutes":75,"lab":{"id":"1.4","title":"الاستبانة والتقييم الذاتي وتجميع الملاحظات","minutes":40,"href":"../labs/D1_4_survey_synthesis.html"}},{"n":5,"label":"الجلسة 5","title":"تثليث الأدلة ومنح الدرجات ومعايرتها","slide":"s5","outcomes":["تمنح كل بُعد درجة من أدلة من نوعين على الأقل وتذكر مراجعها","تحدد مستوى الثقة بقواعد مكتوبة","تعاير درجاتك مع زميل وتحسم الخلاف بالأدلة"],"minutes":95,"lab":{"id":"1.5","title":"تقييم ستة أبعاد ومعايرة الدرجات مع زميل","minutes":60,"href":"../labs/D1_5_score_calibrate.html"}}],"slides":[{"id":"title","n":1,"title":"من النموذج إلى ملف الدرجات","kind":"title","session":0,"hash":"885a5a7a","md":"#### [day1#title] من النموذج إلى ملف الدرجات\n\n*أكاديمية سدايا · تقييم نضج البيانات والذكاء الاصطناعي وخرائط الطريق*\n\nاليوم 1: نموذج يُختار ويُكيَّف، وأدلة تُجمع من المقابلات والوثائق والاستبانة، ثم درجة لكل بُعد بمستوى ثقة\n\nمسار التنفيذيين والقادة · يومان تدريبيان + يوم للمشروع الختامي · 5 جلسات · 5 مختبرات · LDS-ADV-202","notes":"رحّب بالمشاركين، واسأل: من شارك في تقييم نضج من قبل، مقيِّمًا أو مقيَّمًا؟ وماذا حدث بعد التقرير؟ اليوم كله جمع أدلة ثم درجة: نختار نموذجًا ونكيّفه، ونقابل مديرَين، ونقرأ عشرين وثيقة واستبانة، وننهي اليوم بملف درجات لستة أبعاد. الاستراحات بزر B.","minutes":null,"lo":[]},{"id":"agenda","n":2,"title":"من النموذج إلى ملف الدرجات","kind":"content","session":0,"hash":"bb8cb1b7","md":"#### [day1#agenda] من النموذج إلى ملف الدرجات\n\n*اليوم*\n\n- **الجلسة 1 · اختيار نموذج النضج وتكييفه**: نماذج إدارة البيانات وتبني الذكاء الاصطناعي، والنضج غير الامتثال، وخطة الأدلة\n- **الجلسة 2 · مقابلات تنتج أدلة**: دليل المقابلة، وطلب المثال والمخرج، والملاحظات المرقمة\n- **الجلسة 3 · الوثائق والجولات الميدانية**: حالة الوثيقة ودليل تشغيلها، والسياسة ليست ممارسة\n- **الجلسة 4 · الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات**: الحجب والتضخم، والترميز، والتجميع الذي يستشهد بالملاحظات\n- **الجلسة 5 · تثليث الأدلة ومنح الدرجات ومعايرتها**: التثليث، وقواعد الدرجة والثقة، والمعايرة بين المقيّمين","notes":"خمس جلسات اليوم وثلاث غدًا، ثم التقييم المراقب والإحاطة في ختام الغد. الخيط الواحد: لا درجة بلا دليلين من نوعين.","minutes":null,"lo":[]},{"id":"setup-check","n":3,"title":"افتح ثلاثة أشياء، ولا تثبّت شيئًا","kind":"content","session":0,"hash":"7d30ee74","md":"#### [day1#setup-check] افتح ثلاثة أشياء، ولا تثبّت شيئًا\n\n*قبل أن نبدأ*\n\n- **صفحة المقرر.** منها المختبرات وملفات شركة نمير. افتح المختبر 1.1 وتأكد أن evidence_plan.xlsx يُنزَّل ويُفتح.\n- **جدول بيانات.** يقرأ ملفات xlsx وcsv ويصنع جداول محورية. وسبورة رقمية لرسم التبعيات غدًا.\n- **نموذج لغوي مستضاف.** للمختبر 1.4 وحده: نموذج مفتوح الأوزان على خدمة استضافة، أو المساعد المعتمد في جهتك. لا يُنزَّل أي نموذج على الجهاز.\n\n> **الاختبار:** افتح files/staff_survey.csv في جدول البيانات. إن ظهرت أسماء الإدارات بالعربية سليمة، فأنت جاهز.","notes":"إن ظهرت العربية رموزًا في ملف الاستبانة، فاستورده باختيار ترميز UTF-8 بدل فتحه مباشرة. ومن لا يتاح له نموذج مستضاف، يعمل في المختبر 1.4 على ادعاءات النموذج البديل المطبوعة.","minutes":null,"lo":[]},{"id":"s1","n":4,"title":"اختيار نموذج النضج وتكييفه","kind":"section","session":1,"hash":"bfbe9c3e","md":"#### [day1#s1] اختيار نموذج النضج وتكييفه\n\n*الجلسة 1*\n\n- تقارن نماذج نضج منشورة بمعايير مكتوبة وتختار أساسًا لتقييم جهة\n- تكيّف النموذج إلى أبعاد تجيب عن أسئلة الراعي\n- تبني خطة أدلة يرتبط كل سؤال فيها ببُعد ومصدر","notes":"","minutes":null,"lo":["LO1"]},{"id":"assessment-answers-three","n":5,"title":"تقييم النضج يجيب عن ثلاثة أسئلة، والتدقيق عن سؤال واحد","kind":"content","session":1,"hash":"5476379b","md":"#### [day1#assessment-answers-three] تقييم النضج يجيب عن ثلاثة أسئلة، والتدقيق عن سؤال واحد\n\n*ما الذي يشتريه الراعي*\n\n- **تقييم النضج.**\n  - أين نحن في كل بُعد؟\n  - بأي ثقة نقول ذلك؟\n  - ما الخطوة التالية التي تستحق المال؟\n- **تدقيق الامتثال.**\n  - هل كل متطلب مطبق، نعم أم لا؟\n  - الناتج قائمة مخالفات تُصحَّح\n  - يتناوله المقرر LDS-DMG-207\n\n> **ما ستسلّمه في هذا المقرر:** ملف درجات لستة أبعاد بمستوى ثقة، وسجل فجوات، وخارطة طريق، وإحاطة تطلب قرارات.","notes":"ابدأ بالفرق بين التقييم والتدقيق، لأن كثيرًا من الرعاة يطلبون «تقييم نضج» ويتوقعون قائمة مخالفات، أو العكس. اسأل القاعة: لو كنت الرئيس التنفيذي، أي السؤالين يجعلك تنفق؟","minutes":null,"lo":["LO1"]},{"id":"recap-national-domains","n":6,"title":"الضوابط الوطنية: 15 مجالًا، و77 ضابطًا، و191 مواصفة","kind":"content","session":1,"hash":"05e8e02d","md":"#### [day1#recap-national-domains] الضوابط الوطنية: 15 مجالًا، و77 ضابطًا، و191 مواصفة\n\n*مراجعة من المقرر LDS-DMG-101*\n\n- أصدرها مكتب إدارة البيانات الوطنية في سدايا، وتلتزم بها الجهات العامة\n- من الحوكمة ودليل البيانات والجودة، إلى التصنيف وحماية البيانات الشخصية\n- المجال الخامس عشر، أمن البيانات وحمايتها، تتولى ضوابطه الهيئة الوطنية للأمن السيبراني\n- تقيس الامتثال لكل مواصفة سنويًا، مع أدلة التطبيق\n\n**15** مجالًا تغطي البيانات من حوكمتها إلى حمايتها\n\n> **سؤال للمختبر:** هل تغطي كل ما سأل عنه راعي التقييم؟ ستجيب بنفسك بعد قليل.\n\nالمصدر: مكتب إدارة البيانات الوطنية، ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية.","notes":"شريحة مراجعة فقط: المجالات درسها المشاركون في LDS-DMG-101 أو ما يعادله. لا تعدّد المجالات الخمسة عشر. لا تقل الآن إنها لا تغطي استخدام الذكاء الاصطناعي: هذا ما يكتشفه المشاركون في المختبر 1.1 حين يقارنون النماذج بأسئلة الراعي.\n\nSources: ضوابط ومواصفات إدارة البيانات الوطنية وحوكمتها وحماية البيانات الشخصية، القسم 4 وجدول المجالات.","minutes":null,"lo":["LO1"]},{"id":"adoption-framework-pillars","n":7,"title":"ثلاث دعائم: التوجهات، والممكنات، والمخرجات","kind":"content","session":1,"hash":"5005b19f","md":"#### [day1#adoption-framework-pillars] ثلاث دعائم: التوجهات، والممكنات، والمخرجات\n\n*إطار تبني الذكاء الاصطناعي*\n\n- **التوجهات.** الاستراتيجية، والحوكمة\n- **الممكنات.** البيانات، والبنية التحتية، والقدرات البشرية\n- **المخرجات.** التطبيقات، والأثر\n\n> **ما يعنيه للتقييم:** البيانات ممكِّن داخل الإطار، لا هدف في ذاته. الأثر يُقاس في الكفاءة والإنتاجية وجودة الخدمة.\n\n> **ما لا يعطيه:** مستويات نضج بأسمائها. يذكر الإطار أن مؤشرًا لنضج التبني في الجهات الحكومية قيد التطوير.\n\nالمصدر: سدايا، إطار تبني الذكاء الاصطناعي.","notes":"سبعة مكونات في ثلاث دعائم، ولكل مكون عناصر فرعية (مثلًا تحت البيانات: التوافر والوصول، والجودة والتكامل، والاعتمادية). لا نقرأ نص الإطار هنا؛ نحتاج بنيته لنعرف ماذا يضيف إلى الضوابط الوطنية.\n\nSources: سدايا، إطار تبني الذكاء الاصطناعي، القسم 1.5 والشكل الذي يليه.","minutes":null,"lo":["LO1"]},{"id":"maturity-not-compliance","n":8,"title":"الامتثال يسأل «هل هو موجود؟»، والنضج يسأل «هل يعمل ويتحسن؟»","kind":"content","session":1,"hash":"c94c5f3f","md":"#### [day1#maturity-not-compliance] الامتثال يسأل «هل هو موجود؟»، والنضج يسأل «هل يعمل ويتحسن؟»\n\n*النضج ليس امتثالًا*\n\n|  | الامتثال | النضج |\n| --- | --- | --- |\n| **الوحدة** | المواصفة | القدرة |\n| **القيمة** | ثنائية: 100% للمطبقة كاملة، و0% للجزئية | مستوى على سلّم متدرج |\n| **الدليل** | وجود الوثيقة وتطبيقها | تشغيل متكرر، وقياس، وتحسين |\n| **مثال موازٍ** | مستشفى اعتمد سياسة النسخ الاحتياطي: ممتثل | لم يجرّب الاستعادة مرة واحدة: نضج منخفض |\n\nالمصدر للامتثال: مكتب إدارة البيانات الوطنية، ضوابط ومواصفات إدارة البيانات الوطنية. المثال الموازي افتراضي.","notes":"في المقرر LDS-DMG-101 رأى المشاركون أن الوثيقة المعتمدة غير المطبقة لا ترفع الدرجة. هنا نضيف العمق: الامتثال الثنائي يعطي صفرًا للمطبق جزئيًا، والنضج يعطيه مستوى. فقد تكون جهة ممتثلة في مواصفة وناضجة قليلًا فيها، أو غير ممتثلة وفي منتصف الطريق.\n\nSources: ضوابط ومواصفات إدارة البيانات الوطنية، القسم 4 (التقييم الثنائي لكل مواصفة).","minutes":null,"lo":["LO1"]},{"id":"choose-model-criteria","n":9,"title":"اختر النموذج بأسئلة الراعي، لا بشهرته","kind":"content","session":1,"hash":"c56662ee","md":"#### [day1#choose-model-criteria] اختر النموذج بأسئلة الراعي، لا بشهرته\n\n*اختيار النموذج*\n\n| المعيار | السؤال الذي تطرحه |\n| --- | --- |\n| **التغطية** | هل يغطي كل ما سأل عنه الراعي؟ |\n| **المستويات** | هل يصف ما يميّز مستوى عن الذي يليه؟ |\n| **السياق** | هل يعرف التنظيمات التي تخضع لها الجهة؟ |\n| **الترخيص** | هل يجوز تكييفه ونشر المكيَّف داخل الجهة؟ |\n| **القابلية للمقارنة** | هل ستُقاس الجهة به لاحقًا من جهة أخرى؟ |\n\n> **أين يقع الخطأ:** نموذج واحد مشهور يُطبَّق كما هو، فتخرج درجات لا تجيب عن السؤال الذي دفع ثمن التقييم.","notes":"الترخيص معيار حقيقي: بعض النماذج المنشورة تمنع الاستخدام التجاري أو تُلزم بنشر المعدَّل بالترخيص نفسه. ستراه في أحد النماذج الثلاثة في المختبر. لا تقل أيها؛ دعهم يكتشفون.","minutes":null,"lo":["LO1"]},{"id":"adapt-model-moves","n":10,"title":"التكييف أربع حركات، وكل حركة تُكتب مع سببها","kind":"content","session":1,"hash":"83f2c07f","md":"#### [day1#adapt-model-moves] التكييف أربع حركات، وكل حركة تُكتب مع سببها\n\n*التكييف*\n\n1. **1 · خذ البنية** من نموذج أساس يعرفه الراعي\n2. **2 · ادمج** ما يتداخل حتى لا يُقاس مرتين\n3. **3 · أضف** ما لا يغطيه الأساس من نموذج ثانٍ\n4. **4 · سجّل** من أين جاء كل بُعد\n\n> **خمسة إلى سبعة أبعاد.** أقل من ذلك يخلط قدرات مختلفة في درجة واحدة، وأكثر منه لا يتسع له يومان من الأدلة.","notes":"مثال موازٍ: جامعة تكيّف نموذجًا لنضج البيانات، فتدمج «البيانات الرئيسية» في «الجودة»، وتضيف بُعد «بيانات البحث» من نموذج آخر، وتسجل الأصل. السجل هو ما يسمح لمقيّم آخر بعد سنة أن يقيس بالنموذج نفسه.","minutes":null,"lo":["LO1"]},{"id":"evidence-plan-trace","n":11,"title":"كل سؤال يعرف بُعده، وكل بُعد يعرف مصادره","kind":"content","session":1,"hash":"38322b6c","md":"#### [day1#evidence-plan-trace] كل سؤال يعرف بُعده، وكل بُعد يعرف مصادره\n\n*خطة الأدلة*\n\n| البُعد | مقابلة | وثيقة | استبانة |\n| --- | --- | --- | --- |\n| بيانات البحث | عميد البحث | سياسة إدارة البيانات البحثية | «أودعتُ بياناتي في المستودع» |\n| الجودة | مسجّل الجامعة | تقرير أخطاء القيد | «أعرف لمن أبلغ عن خطأ» |\n\n- **مصدران من نوعين** لكل بُعد على الأقل، قبل أن تبدأ\n- **سؤال المقابلة** يطلب مثالًا ومخرجًا\n- **طلب الوثيقة** يطلب سجل تشغيل، لا السياسة وحدها\n- **بند الاستبانة** يصف سلوكًا يعرفه الموظف\n\nمثال موازٍ لجامعة افتراضية، لا لشركة نمير.","notes":"البُعد الذي له مصدر واحد لا يحصل لاحقًا على ثقة عالية مهما كان المصدر جيدًا. لذلك نتتبع التغطية الآن، في الخطة، لا بعد جمع الأدلة.","minutes":null,"lo":["LO1"]},{"id":"check-model-choice","n":12,"title":"نموذج ملزم، وراعٍ يسأل عما لا يغطيه","kind":"quiz","session":1,"hash":"dfbc70a9","md":"#### [day1#check-model-choice] نموذج ملزم، وراعٍ يسأل عما لا يغطيه\n\n*نقطة تحقق*\n\n**سؤال:** جامعة افتراضية طلب رئيسها تقييمًا لنضج البيانات يشمل بيانات البحث. اقترح زميلك اعتماد نموذج ملزم لإدارة البيانات وحده لأنه ملزم، وهو لا يذكر بيانات البحث. ما ردك؟\n\n- أ. أعتمده أساسًا، وأضيف بُعد بيانات البحث من نموذج آخر\n- ب. أعتمده كما هو، فالنموذج الملزم يغطي كل ما سأل عنه رئيس الجامعة\n- ج. أستبدله بنموذج دولي أشهر منه وأكثر استخدامًا في الجامعات المماثلة\n- د. أحوّل مواصفاته إلى قائمة تحقق بنعم أو لا لكل إدارة في الجامعة","notes":"الإجابة: أ. المثال الموازي نفسه في شريحة التكييف (بيانات البحث). إن اختار أحد «د» فارجع إلى شريحة النضج ليس امتثالًا: قائمة نعم ولا تعطي امتثالًا ثنائيًا، لا مستوى. لا تربطها بنماذج شركة نمير: ذلك عمل المختبر.","minutes":null,"lo":["LO1"]},{"id":"lab-1-1","n":13,"title":"تكييف نموذج والتخطيط للأدلة","kind":"lab","session":1,"hash":"51bd3d39","md":"#### [day1#lab-1-1] تكييف نموذج والتخطيط للأدلة\n\nالمختبر 1.1 · 45 دقيقة\n\nتقارن ثلاثة نماذج منشورة، وتختار أساسًا وتكيّفه إلى أبعاد لشركة نمير، ثم تكتب خطة أدلة من أسئلة مقابلات وطلب وثائق وبنود استبانة يرتبط كل منها ببُعد.\n\n[D1_1_model_plan.html](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_1_model_plan.html)\n\n- [ ] اقرأ مقتطفات النماذج الثلاثة والهيكل التنظيمي واملأ جدول المقارنة (10 د)\n- [ ] اختر النموذج الأساس واكتب مبرر الاختيار في ثلاثة أسطر (6 د)\n- [ ] كيّف النموذج إلى أبعاد تجيب عن أسئلة الراعي (9 د)\n- [ ] اكتب أسئلة المقابلتين لكل بُعد (8 د)\n- [ ] اكتب طلب الوثائق وأربعة بنود للاستبانة (7 د)\n- [ ] تتبّع: لكل بُعد مصدران من نوعين على الأقل (5 د)\n- [ ] ✱ إضافي: اكتب سؤالًا لجولة ميدانية في غرفة التحكم يكشف ما لا تكشفه المقابلة","notes":"البداية من model_extracts.md والهيكل والموجز. راقب من يختار النموذج أ وحده ومن يبحث عن أوصاف مستويات النموذج ج لينقلها. ذكّر بأن الخطة تُكتب بأنواع الوثائق، لأنهم لا يعرفون رموزها بعد. وزّع scoring_guide.xlsx بعد المختبر لا قبله.","minutes":null,"lo":[]},{"id":"debrief-1-1","n":14,"title":"المرجع: بيانات من الضوابط الوطنية، وذكاء اصطناعي من إطار التبني","kind":"content","session":1,"hash":"379451ad","md":"#### [day1#debrief-1-1] المرجع: بيانات من الضوابط الوطنية، وذكاء اصطناعي من إطار التبني\n\n*بعد المختبر 1.1*\n\n| البُعد | من أين |\n| --- | --- |\n| D1 الاستراتيجية والحوكمة | أ: الحوكمة؛ ب: التوجهات |\n| D2 جودة البيانات والبيانات الوصفية | أ: الجودة، ودليل البيانات، والبيانات الرئيسية |\n| D3 المنصات والتكامل | أ: العمليات والتكامل؛ ب: البنية التحتية |\n| D4 الحماية والتصنيف | أ: التصنيف وحماية البيانات الشخصية |\n| D5 القدرات البشرية والثقافة | ب: القدرات البشرية |\n| D6 استخدام الذكاء الاصطناعي وأثره | ب: التطبيقات، والأثر |\n\n> **الفخ الأول:** النموذج أ وحده يترك D6 بلا بُعد.\n\n> **الفخ الثاني:** نقل أوصاف مستويات النموذج ج، وترخيصه غير تجاري ويُلزم بالمشاركة بالمثل.\n\n> **من الآن:** هذه الأبعاد الستة ومقياس المقرر في start/scoring_guide.xlsx.","notes":"الحل المرجعي في labs/solutions/D1_1_model_plan.md: خطة من 19 بندًا، لكل بُعد ثلاثة أنواع من المصادر على الأقل (تحقق منها check.py). اقبل أبعادًا أخرى إن كانت مبررة ومسجلة الأصل؛ لكن ما يلي من مختبرات يبدأ من الأبعاد الستة المرجعية ليقارن الجميع بالمرجع نفسه.","minutes":null,"lo":["LO1"]},{"id":"s2","n":15,"title":"مقابلات تنتج أدلة","kind":"section","session":2,"hash":"090425c8","md":"#### [day1#s2] مقابلات تنتج أدلة\n\n*الجلسة 2*\n\n- تجري مقابلة تقييم بدليل مكتوب وأسئلة متابعة تطلب مثالًا ومخرجًا\n- تدوّن ملاحظات مرقمة تميّز بين ما قيل وما عُرض وما لوحظ\n- تلتقط الادعاء الذي لا يقف خلفه دليل","notes":"","minutes":null,"lo":["LO1","LO2"]},{"id":"interview-is-evidence","n":16,"title":"المقابلة تجمع أدلة، لا انطباعات","kind":"content","session":2,"hash":"a5a6e075","md":"#### [day1#interview-is-evidence] المقابلة تجمع أدلة، لا انطباعات\n\n*المقابلة أداة قياس*\n\n- **دليل مكتوب** يربط كل سؤال ببُعد\n- **سؤال رئيسي مفتوح**، ثم متابعة تطلب مثالًا\n- **ملاحظة مرقمة** لكل ادعاء أو مخرج\n- **الغرض والسرية** في الدقيقة الأولى، والإذن بالتدوين\n\n- **لماذا دون ذكاء اصطناعي؟** التسجيل يحتاج موافقة المحاوَر، والتفريغ الآلي يرسل كلامه إلى خدمة خارجية. والمهارة نفسها، أن تسمع الادعاء وتطلب دليله في اللحظة، لا تُفوَّض.","notes":"سياسة المقرر: المقابلات والتقييم المراقب دون ذكاء اصطناعي. التجميع بالنموذج يأتي لاحقًا، في الجلسة الرابعة، وبعد ترميز الأسماء.","minutes":null,"lo":["LO2"]},{"id":"said-shown-observed","n":17,"title":"ما قيل، وما عُرض، وما لوحظ: ثلاثة أوزان مختلفة","kind":"content","session":2,"hash":"001d4e3b","md":"#### [day1#said-shown-observed] ما قيل، وما عُرض، وما لوحظ: ثلاثة أوزان مختلفة\n\n*ثلاث علامات للملاحظة*\n\n1. **[قال]**: ما قاله المحاوَر (مصدر يُتحقق منه)\n2. **[عرض]**: مخرج رأيته بعينك (تقرير بتاريخه، سجل، شاشة)\n3. **[لوحظ]**: ما شاهدته يحدث (إجابة دون مثال، عملية تجري)\n\n> **القاعدة:** كل [قال] يحمل ادعاء نضج يحتاج [عرض] أو وثيقة. ضع خطًا تحت ما بقي بلا دليل: هذه قائمة طلباتك.","notes":"العلامة الثالثة تفاجئ المشاركين: «لوحظ أنه أجاب عن الجودة بعبارات عامة» ملاحظة مشروعة، لأنها وصف لما حدث لا حكم على الشخص. لا تكتب «كان متهربًا»؛ اكتب ما رأيت.","minutes":null,"lo":["LO2"]},{"id":"ask-for-last-time","n":18,"title":"«متى حدث آخر مرة؟ أرني» يحوّل الصفة إلى دليل","kind":"content","session":2,"hash":"585dbfde","md":"#### [day1#ask-for-last-time] «متى حدث آخر مرة؟ أرني» يحوّل الصفة إلى دليل\n\n*سؤال المتابعة*\n\n**المقيّم:** كيف تتعاملون مع أخطاء سجلات المرضى؟\n\n**مديرة السجلات الطبية:** لدينا إجراء دقيق، والجودة عندنا عالية جدًا.\n\n**المقيّم:** متى اكتُشف آخر خطأ؟ ومن صحّحه؟ هل يمكنني رؤية السجل؟\n\n**مديرة السجلات الطبية:** الشهر الماضي اكتشفه قسم الفوترة… في الحقيقة لا نسجّل التصحيحات.\n\nمثال موازٍ من مستشفى افتراضي.","notes":"اقرأ الحوار بصوتين. الجملة الأخيرة هي الدليل: لا سجل للتصحيحات، وما اكتُشف اكتُشف خارج الإدارة. السؤال الذي كشفها طلب «آخر مرة» و«من» و«أرني». اطلب من المشاركين كتابة هذه الكلمات الثلاث على ورقة أمامهم في المقابلة.","minutes":null,"lo":["LO2"]},{"id":"leading-vs-open","n":19,"title":"السؤال الموحي يجمع رأيك أنت","kind":"content","session":2,"hash":"b2ab867a","md":"#### [day1#leading-vs-open] السؤال الموحي يجمع رأيك أنت\n\n*صياغة السؤال*\n\n| موحٍ | مفتوح |\n| --- | --- |\n| أليست جودة البيانات مشكلة كبيرة عندكم؟ | ماذا حدث آخر مرة وجدتم خطأ في البيانات؟ |\n| هل عندكم استراتيجية بيانات معتمدة؟ | ما آخر قرار اتخذتموه اعتمادًا على البيانات؟ |\n| تستخدمون الذكاء الاصطناعي، صحيح؟ | هل يعمل لديكم اليوم أي استخدام؟ من يملكه؟ |\n\n> **أين يقع الخطأ:** سؤال بنعم أو لا عن وجود وثيقة. الإجابة «نعم» دائمًا، والوثيقة قد تكون مسودة.","notes":"اطلب من كل مشارك أن يعيد صياغة سؤال موحٍ من عمله. التمرين الإضافي في المختبر يعود إلى هذا.","minutes":null,"lo":["LO2"]},{"id":"notes-with-ids","n":20,"title":"ملاحظة مرقمة اليوم مرجعٌ في ملف الدرجات غدًا","kind":"content","session":2,"hash":"9271b5fe","md":"#### [day1#notes-with-ids] ملاحظة مرقمة اليوم مرجعٌ في ملف الدرجات غدًا\n\n*التدوين*\n\n```\n# ملف: notes.md\nN-HR-03 [قال] «كل المديرين تدربوا على البيانات»\nN-HR-04 [عرض] كشف حضور: 6 من 40 مديرًا\nN-HR-05 [لوحظ] لم يُذكر قياس لما بعد التدريب\n```\n\n- **رقم ثابت** لا يتغير حين تعيد ترتيب الملاحظات\n- **نص الادعاء بين علامتي تنصيص** حين يهم\n- **ملاحظة واحدة لفكرة واحدة**، ليستشهد بها ادعاء واحد\n- **لا اسم لغير المحاوَر**؛ اكتب الدور\n\nمثال موازٍ من إدارة موارد بشرية افتراضية.","notes":"الأرقام هي ما يجعل التجميع بالنموذج قابلًا للفحص في الجلسة الرابعة: كل ادعاء مجمَّع يستشهد برقم، وتفتح الرقم لترى هل يقول ذلك.","minutes":null,"lo":["LO2"]},{"id":"role-play-protocol","n":21,"title":"ثلاثة أدوار تتبادلونها: محاور، ومدوّن، ومؤدٍّ للدور","kind":"content","session":2,"hash":"a79c47ee","md":"#### [day1#role-play-protocol] ثلاثة أدوار تتبادلونها: محاور، ومدوّن، ومؤدٍّ للدور\n\n*كيف يسير المختبر*\n\n- **المحاور.** يسأل من الدليل، ويطلب المثال والمخرج. لا يقرأ بطاقة الدور.\n- **المدوّن.** يكتب الملاحظات بأرقامها وعلاماتها، والادعاء بنصه.\n- **مؤدي الدور.** يقول ما في بطاقته، ولا يكشف ما فيها إلا لسؤال محدد.\n\n> **المقابلتان:** مدير العمليات والشبكات، ثم مديرة خدمة العملاء والفوترة، 15 دقيقة لكل منهما.","notes":"إن كان العدد لا يقسم على ثلاثة فأدِّ أحد الدورين بنفسك. انتبه لمؤدي الدور الذي يكشف كل البطاقة من أول سؤال: ذكّره بأن المحاوَر الحقيقي لا يتطوع بما لا يُسأل عنه.","minutes":null,"lo":["LO2"]},{"id":"check-interview-followup","n":22,"title":"مدير يقول «جودتنا ممتازة»","kind":"quiz","session":2,"hash":"e6f09d5b","md":"#### [day1#check-interview-followup] مدير يقول «جودتنا ممتازة»\n\n*نقطة تحقق*\n\n**سؤال:** في مقابلة مع مدير المستودعات في شركة توزيع افتراضية قال: «جودة بيانات المخزون ممتازة، نحن في المستوى 4.» ما خطوتك التالية؟\n\n- أ. أسجّل المستوى 4 كما قال، لأنه صاحب الإدارة والأعلم بها\n- ب. أخفّض الدرجة سلفًا لأن المديرين يبالغون\n- ج. أسأل عن آخر خطأ اكتُشف ومن صحّحه، وأطلب رؤية القياس\n- د. أنتقل إلى السؤال التالي وأتحقق من قوله لاحقًا في الاستبانة","notes":"الإجابة: ج. ستجد الموقف نفسه بعد دقائق في المختبر. لا تقل ذلك؛ دعهم يتعرفون عليه.","minutes":null,"lo":["LO2"]},{"id":"lab-1-2","n":23,"title":"مقابلة مديرَين في تمثيل للأدوار","kind":"lab","session":2,"hash":"7485e50d","md":"#### [day1#lab-1-2] مقابلة مديرَين في تمثيل للأدوار\n\nالمختبر 1.2 · 60 دقيقة\n\nفي مجموعات ثلاثية: محاور ومدوّن ومؤدٍّ للدور، تجرون مقابلتين مع مدير العمليات ومديرة خدمة العملاء من بطاقتي الدور، دون ذكاء اصطناعي، ثم تقارنون ملاحظاتكم بالملاحظات المرجعية.\n\n[D1_2_interviews.html](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_2_interviews.html)\n\n- [ ] وزّعوا الأدوار واقرؤوا دليل المقابلة (8 د)\n- [ ] المقابلة الأولى: مدير العمليات (15 د)\n- [ ] المقابلة الثانية: مديرة خدمة العملاء، بأدوار متبادلة (15 د)\n- [ ] رقّم الملاحظات وعلّم كل واحدة: قال، عرض، لوحظ (12 د)\n- [ ] قارن بالملاحظات المرجعية: ماذا فاتك؟ (10 د)\n- [ ] ✱ إضافي: أعد صياغة سؤالين من أسئلتك كانا يوحيان بالإجابة","notes":"تجوّل بين المجموعات واستمع لأسئلة المتابعة. اكتب على السبورة كل مرة تسمع فيها «أرني». في الخطوة 5 وزّع الملاحظات المرجعية (files/start/interview_notes_\\*.md) لا قبلها. من لم يحضر المقابلة يبدأ الخطوة 4 من الملاحظات المرجعية مع حذف علاماتها.","minutes":null,"lo":[]},{"id":"debrief-1-2","n":24,"title":"أكبر الوقائع لم تُقل إلا لمن سأل","kind":"content","session":2,"hash":"2643f975","md":"#### [day1#debrief-1-2] أكبر الوقائع لم تُقل إلا لمن سأل\n\n*بعد المختبر 1.2*\n\n| الملاحظة | ما ظهر بسؤال المتابعة |\n| --- | --- |\n| N-OPS-04 | نحو ثلث القراءات تقديرية |\n| N-OPS-05 | كل منطقة تصحح بطريقتها |\n| N-OPS-09 | نموذج التسربات لم يُشغَّل ولم يُختبر |\n| N-CS-02 | قياس الجودة جهد فردي يتوقف بالغياب |\n| N-CS-05 | المساعد الآلي بلا مالك |\n\n**2 من 20** ملاحظة [عرض] في المرجع، مقابل 16 قولًا تنتظر أدلتها\n\n> **N-OPS-01:** «المستوى 4» بلا أي مخرج خلفه، ولم يُعرض إلا لوحة التحكم.","notes":"الأرقام من الملاحظات المرجعية (check.py 1.2): عشرون ملاحظة، 16 [قال] و2 [عرض] و2 [لوحظ]. اسأل كل مجموعة: كم من الخمس في الجدول التقطتم؟ من التقط ثلاثًا أو أكثر سأل المتابعة جيدًا.","minutes":null,"lo":["LO2"]},{"id":"s3","n":25,"title":"الوثائق والجولات الميدانية","kind":"section","session":3,"hash":"ac1afe83","md":"#### [day1#s3] الوثائق والجولات الميدانية\n\n*الجلسة 3*\n\n- تفرز حزمة وثائق بحسب الحالة والتاريخ والاعتماد ودليل التشغيل\n- تسجّل كل دليل ببُعده وقوته واتجاهه\n- تكتشف تعارض الوثيقة مع قول المدير وتطلب ما ينقص","notes":"","minutes":null,"lo":["LO2"]},{"id":"request-operating-records","n":26,"title":"اطلب ما يثبت التشغيل، لا ما يثبت النية وحدها","kind":"content","session":3,"hash":"2ea6d10a","md":"#### [day1#request-operating-records] اطلب ما يثبت التشغيل، لا ما يثبت النية وحدها\n\n*طلب الوثائق*\n\n- **وثائق النية.**\n  - السياسة\n  - الاستراتيجية\n  - الخطة\n  - الميثاق\n- **وثائق التشغيل.**\n  - المحاضر المتتالية\n  - سجل التشغيل أو المراقبة\n  - تقرير القياس الدوري\n  - مستخلص من النظام\n\n> **صيغة الطلب:** «السياسة، وآخر ثلاثة مخرجات تثبت تطبيقها.» هكذا تعرف من الطلب نفسه هل الممارسة موجودة.","notes":"جهات كثيرة ترسل للمقيّم ملف السياسات كاملًا. هذا مفيد لكنه نصف القصة. طلب «آخر ثلاثة مخرجات» يكشف في يوم واحد ما تكشفه المقابلات في أسبوع.","minutes":null,"lo":["LO2"]},{"id":"four-questions-document","n":27,"title":"أربعة أسئلة لكل وثيقة قبل أن تقرأ محتواها","kind":"content","session":3,"hash":"810c77e1","md":"#### [day1#four-questions-document] أربعة أسئلة لكل وثيقة قبل أن تقرأ محتواها\n\n*فرز الوثيقة*\n\n- **الحالة.** معتمدة أم مسودة؟ من اعتمدها؟\n- **التاريخ.** حديثة أم تصف أنظمة تغيّرت؟\n- **النوع.** ممارسة أم نية؟\n- **المنهج.** إن كان فيها رقم: كيف حُسب ومن حسبه؟\n\n> **أين يقع الخطأ:** رقم لامع في عرض تقديمي، بلا منهج ولا مصدر، يُنقل إلى ملف الدرجات كأنه قياس.","notes":"السؤال الرابع أهمها في التقارير التي يكتبها المورّدون: نسبة رضا محسوبة ممن ضغطوا زر الإعجاب ليست رضا العملاء. لا تذكر وثائق شركة نمير هنا.","minutes":null,"lo":["LO2"]},{"id":"evidence-strength-ladder","n":28,"title":"من الادعاء إلى القياس المتكرر: خمس درجات من القوة","kind":"content","session":3,"hash":"61748ef5","md":"#### [day1#evidence-strength-ladder] من الادعاء إلى القياس المتكرر: خمس درجات من القوة\n\n*قوة الدليل*\n\n1. **ادعاء**: بلا منهج ولا تاريخ (ليس دليلًا)\n2. **نية**: مسودة، دعوة، خطة (ضعيف)\n3. **وجود**: وثيقة معتمدة (متوسط)\n4. **تشغيل**: سجل أو محاضر متتالية (قوي)\n5. **قياس**: مؤشر دوري يُراجع (قوي جدًا)","notes":"هذا السلم هو عمود «القوة» في سجل الأدلة. المهم: الوثيقة المعتمدة في المنتصف لا في الأعلى. ما فوقها يثبت أن أحدًا يعمل بها.","minutes":null,"lo":["LO2"]},{"id":"walkthrough-adds","n":29,"title":"الجولة ترى العملية تجري، فتحسم ما تختلف فيه الوثيقة والمقابلة","kind":"content","session":3,"hash":"ef45a530","md":"#### [day1#walkthrough-adds] الجولة ترى العملية تجري، فتحسم ما تختلف فيه الوثيقة والمقابلة\n\n*الجولة الميدانية*\n\n- اطلب أن ترى خطوة واحدة تُنفَّذ أمامك، لا عرضًا عنها\n- اختر الخطوة التي تتعارض فيها الأدلة\n- دوّن ما رأيته بعلامة [لوحظ]، برقم كالمقابلة\n- اسأل المنفّذ لا المدير: «ماذا تفعل حين يفشل هذا؟»\n\n- **مثال موازٍ.** في بلدية افتراضية تقول السياسة إن الطلبات تُصنّف آليًا. في الجولة رأى المقيّم موظفًا يعيد تصنيف ثلث الطلبات يدويًا كل صباح.","notes":"في هذا المقرر لا نجري جولة فعلية؛ نخطط لها في التمرين الإضافي للمختبر. لكن عدم إجرائها يؤثر في مستوى الثقة لاحقًا: بُعد لم يُرَ تشغيله إلا في وثيقة يبقى بثقة متوسطة.","minutes":null,"lo":["LO2"]},{"id":"evidence-log-fields","n":30,"title":"التعارض بين المصادر نتيجة تُسجَّل، لا إزعاج يُتجاوز","kind":"content","session":3,"hash":"5fc65103","md":"#### [day1#evidence-log-fields] التعارض بين المصادر نتيجة تُسجَّل، لا إزعاج يُتجاوز\n\n*سجل الأدلة*\n\n| الرمز | البُعد | ما يثبته | القوة | الاتجاه | يتعارض مع |\n| --- | --- | --- | --- | --- | --- |\n| V07 | الجودة | تقرير أخطاء القيد الشهري منذ سنتين | قوي | يرفع |  |\n| V11 | بيانات البحث | سياسة إدارة البيانات البحثية، مسودة | ضعيف | يخفض | N-RES-02 |\n| N-RES-02 | بيانات البحث | «السياسة معتمدة منذ عام» | قول |  | V11 |\n\nمثال موازٍ لجامعة افتراضية.\n\n> **القاعدة:** الوثيقة تحسم حالتها هي. السياسة مسودة كما في الملف، ولو قال المدير غير ذلك.","notes":"عمود «يتعارض مع» هو ما يجعل الإحاطة قوية لاحقًا: حين يعترض الراعي على درجة، تجيب بالتعارض المسجل لا بالذاكرة.","minutes":null,"lo":["LO2"]},{"id":"check-document-strength","n":31,"title":"أي وثيقة ترفع الدرجة؟","kind":"quiz","session":3,"hash":"24da781f","md":"#### [day1#check-document-strength] أي وثيقة ترفع الدرجة؟\n\n*نقطة تحقق*\n\n**سؤال:** تقيّم جودة البيانات في صندوق إقراض افتراضي. أي هذه الوثائق أقوى دليل على أن الجودة تُدار فعلًا؟\n\n- أ. سياسة جودة البيانات المعتمدة من مجلس الإدارة\n- ب. تقارير القياس الشهرية للسنة الأخيرة، مع ما صُحّح\n- ج. عرض قُدّم لمجلس الإدارة يقول إن دقة البيانات بلغت 98%\n- د. دعوة الموظفين إلى ورشة «أسبوع الجودة»","notes":"الإجابة: ب. إن انقسمت القاعة بين أ وب، فارجع إلى سلم القوة: الوثيقة المعتمدة في منتصفه.","minutes":null,"lo":["LO2"]},{"id":"lab-1-3","n":32,"title":"مراجعة حزمة الوثائق","kind":"lab","session":3,"hash":"4b6079d2","md":"#### [day1#lab-1-3] مراجعة حزمة الوثائق\n\nالمختبر 1.3 · 40 دقيقة\n\nتفرز عشرين وثيقة من شركة نمير، وتسجّل ما يثبته كل منها ولأي بُعد وبأي قوة، وتطابقها بأقوال المديرين، ثم تكتب طلبين لوثائق ناقصة.\n\n[D1_3_documents.html](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_3_documents.html)\n\n- [ ] افرز الوثائق العشرين: الحالة والتاريخ والاعتماد (10 د)\n- [ ] سجّل الأدلة في سجل الأدلة: البُعد والقوة والاتجاه (15 د)\n- [ ] طابق الوثائق بثلاثة أقوال من المقابلات (8 د)\n- [ ] اكتب طلبين لوثائق تنقصك (4 د)\n- [ ] قارن بالمرجع (3 د)\n- [ ] ✱ إضافي: اختر وثيقة واحدة واكتب كيف تتحقق منها في جولة ميدانية","notes":"البداية من الفهرس والوثائق والملاحظات المرجعية؛ لا يحتاج المختبر ملاحظات 1.2. راقب من يقرأ الوثائق بالترتيب كاملة: الفرز بالأسئلة الأربعة أولًا يوفّر نصف الوقت. الأرقام المرجعية في details للمدرب في صفحة المختبر.","minutes":null,"lo":[]},{"id":"debrief-1-3","n":33,"title":"أربعة أرقام من الحزمة تنقض الصورة اللامعة","kind":"content","session":3,"hash":"12942fc9","md":"#### [day1#debrief-1-3] أربعة أرقام من الحزمة تنقض الصورة اللامعة\n\n*بعد المختبر 1.3*\n\n- **41 من 312** أصلًا في دليل البيانات لها مالك (D08)\n- **38%** من القراءات تقديرية في الربع الثالث (D07)\n- **2 من 6** اجتماعات للجنة الحوكمة عُقدت (D04)\n- **86%** مؤشَّر عليها في قائمة الامتثال، و40% منها بلا دليل (D12)\n\n> **ليست أدلة:** D19 (ادعاء «المستوى 4»)، وD20 (دعوة)، وD09 (معمارية 2019). **مسودتان:** D02 وD05.","notes":"الأرقام من check.py 1.3، محسوبة من نص الوثائق. أقوى دليل تشغيل في الحزمة D10: سجل تكامل الفوترة، 29 تشغيلًا ناجحًا من 30. قل للمشاركين: احفظوه، فستحتاجونه في المختبر 1.5. ولا تقل أي درجة يسندها.","minutes":null,"lo":["LO2"]},{"id":"s4","n":34,"title":"الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات","kind":"section","session":4,"hash":"a392e5fe","md":"#### [day1#s4] الاستبانات وتضخم التقييم الذاتي وتجميع الملاحظات\n\n*الجلسة 4*\n\n- تحسب نتائج استبانة لكل إدارة وتحجب المجموعات الصغيرة\n- تقيس تضخم التقييم الذاتي بمقارنته بالاستبانة والوثائق\n- ترمّز ملاحظات المقابلات وتجمعها بنموذج، وتحذف كل ادعاء لا يستشهد بملاحظة","notes":"","minutes":null,"lo":["LO2"]},{"id":"survey-behaviour-items","n":35,"title":"اسأل عن سلوك يعرفه الموظف، لا عن رأيه في الجهة","kind":"content","session":4,"hash":"dfeeec26","md":"#### [day1#survey-behaviour-items] اسأل عن سلوك يعرفه الموظف، لا عن رأيه في الجهة\n\n*بنود الاستبانة*\n\n| بند رأي | بند سلوك |\n| --- | --- |\n| الشركة تهتم بجودة البيانات | حين أجد خطأ في البيانات أعرف لمن أبلغ عنه |\n| البيانات مهمة في عملنا | يُطلب مني أن أدعم قراراتي بالبيانات |\n| نحن مستعدون للذكاء الاصطناعي | أعرف لمن أرجع إذا أخطأ نظام ذكاء اصطناعي في عملي |\n\n> **الأداة:** أي أداة استبانات تكفي، مثل LimeSurvey أو Microsoft Forms. المهم أن تحفظ الإدارة لكل إجابة، لا الاسم.","notes":"بند الرأي يقيس الولاء أو المزاج. بند السلوك يقيس الممارسة كما يعيشها الموظف، فيصلح دليلًا من نوع ثالث بجانب المقابلة والوثيقة.","minutes":null,"lo":["LO1","LO2"]},{"id":"minimum-group-size","n":36,"title":"المجموعة الصغيرة تُحجب لحماية أفرادها، وتُقرأ بحذر لصغرها","kind":"content","session":4,"hash":"899128b7","md":"#### [day1#minimum-group-size] المجموعة الصغيرة تُحجب لحماية أفرادها، وتُقرأ بحذر لصغرها\n\n*مسؤولية تجاه الأفراد*\n\n- **الحجب للخصوصية.** لا تُعرض نتيجة مجموعة أقل من خمسة: في فريق من أربعة يُعرف من أجاب بماذا.\n- **الحذر للدقة.** فوق الخمسة يبقى المتوسط متقلبًا. الحجب لا يجعل الرقم دقيقًا.\n\n**مجموعتان من المجتمع نفسه:** كم مرة يختلف متوسطاهما بنصف درجة أو أكثر بالصدفة؟\n\n| البند | القيمة |\n| --- | --- |\n| 5 في كل مجموعة | 48% |\n| 10 في كل مجموعة | 37% |\n| 30 في كل مجموعة | 10% |\n\nمحاكاة بعينات عشوائية على مقياس من 1 إلى 5، 50,000 تكرار لكل حجم.","notes":"قاعدتان لا قاعدة واحدة. الأولى من سياسة المقرر للاستخدام المسؤول: لا عرض لمجموعة تحت حد أدنى، وفي شركة نمير الحد خمسة. الثانية من المحاكاة: مجموعتان متطابقتان في الحقيقة، خمسة في كل منهما، تختلفان بنصف درجة أو أكثر في نحو نصف المرات. لذلك نمير لا تقرأ الفرق بين إدارتين نتيجة إلا وفي كل منهما 30 على الأقل.\n\nالمحاكاة: توزيع ثابت للإجابات (12% و28% و32% و20% و8% للدرجات 1 إلى 5)، وبذرة ثابتة، في ملاحظات عمل المقرر.","minutes":null,"lo":["LO2"]},{"id":"self-assessment-inflation","n":37,"title":"من يقيّم إدارته يقيس ما ينويه، لا ما يحدث","kind":"content","session":4,"hash":"6656e031","md":"#### [day1#self-assessment-inflation] من يقيّم إدارته يقيس ما ينويه، لا ما يحدث\n\n*تضخم التقييم الذاتي*\n\n- **النية.** المدير يعرف السياسة التي اعتمدها، ولا يرى أنها لا تُطبق في الميدان.\n- **الموقع.** التقييم يُقرأ تقييمًا لأدائه، فيميل إلى الأعلى.\n- **المقياس.** وصف المستوى عام، فيقرأ كل مدير نفسه في أعلاه.\n\n> **ما تفعله:** لا ترفض التقييم الذاتي. ضعه بجانب الاستبانة والوثائق، واحسب الفرق لكل بُعد: الفرق نفسه نتيجة تُعرض على الراعي.","notes":"لا نضع رقمًا عامًا للتضخم هنا: الرقم الذي يهمنا هو رقم شركة نمير، وستحسبه بنفسك في المختبر. اسأل القاعة: من رأى تقييمًا ذاتيًا في جهته جاء أعلى من نتيجة تدقيق لاحق؟","minutes":null,"lo":["LO2"]},{"id":"pseudonymise-first","n":38,"title":"رمّز الأسماء، ثم تحقق، ثم أرسل","kind":"content","session":4,"hash":"e94b0c47","md":"#### [day1#pseudonymise-first] رمّز الأسماء، ثم تحقق، ثم أرسل\n\n*قبل أن تخرج الملاحظات من جهازك*\n\n1. **1 · انسخ** الملاحظات إلى ملف جديد\n2. **2 · استبدل** كل اسم بدوره: «المحللة»، «المهندسة (أ)»\n3. **3 · ابحث** عن كل اسم مرة أخرى؛ صفر نتائج\n4. **4 · أرسل** إلى النموذج المعتمد في جهتك فقط\n\n> **الأسماء تختبئ:** اسم أول وحده، أو لقب، أو «زوجة المدير»، أو وصف لا يطابقه إلا شخص واحد.","notes":"هذا من سياسة الاستخدام المسؤول في المقرر: ملاحظات المقابلات تُرمَّز قبل أن يجمعها نموذج. الخطوة 3 هي التي ينساها الناس. والترميز لا يجعل النص مجهول الهوية تمامًا: وصف «مديرة خدمة العملاء» يدل على شخص واحد، لذلك يبقى النموذج المعتمد في الجهة شرطًا.","minutes":null,"lo":["LO2"]},{"id":"synthesis-cites-notes","n":39,"title":"كل ادعاء مجمَّع يستشهد بملاحظة، وما لا يستشهد يُحذف","kind":"content","session":4,"hash":"a5e83c4c","md":"#### [day1#synthesis-cites-notes] كل ادعاء مجمَّع يستشهد بملاحظة، وما لا يستشهد يُحذف\n\n*التجميع بنموذج مرشد*\n\nأمر لـ نموذج مستضاف + ملاحظات مرمّزة:\n\n```text\nاجمع هذه الملاحظات في ادعاءات قصيرة بحسب الأبعاد. لكل ادعاء اذكر رقم الملاحظة التي تقوله بنصها، مثل [N-HR-04]. لا تكتب ادعاءً لا تجده في الملاحظات، ولا توصية، ولا درجة.\n```\n\n> **بلا رقم:** احذفه، ولو بدا صحيحًا.\n\n> **رقم لا يقول ذلك:** افتح الملاحظة. «تدعم الإدارة» من ملاحظة تقول «بمبادرة فردية» تُحذف.\n\n> **توصية:** ليست ادعاءً عن الواقع. مكانها خارطة الطريق، غدًا.","notes":"سياسة المقرر: الذكاء الاصطناعي مرشد في تجميع الملاحظات، على أن يستشهد كل ادعاء بملاحظة. النموذج يوفر الوقت في الترتيب والتجميع، والمقيّم يبقى مسؤولًا عن كل ادعاء. عرض حي: إن كان النموذج متاحًا، الصق الأمر مع ملاحظات المثال الموازي (N-HR) وافتح أول رقم يعيده.","minutes":null,"lo":["LO2"]},{"id":"ai-policy-three-modes","n":40,"title":"ثلاثة أوضاع، لكل نشاط وضعه","kind":"content","session":4,"hash":"5b8dafa9","md":"#### [day1#ai-policy-three-modes] ثلاثة أوضاع، لكل نشاط وضعه\n\n*سياسة الذكاء الاصطناعي في هذا المقرر*\n\n| الوضع | النشاط | الشرط |\n| --- | --- | --- |\n| **دون ذكاء اصطناعي** | المقابلات، والتقييم المراقب لبُعدين | حكمك على الأدلة بيدك |\n| **مرشد** | تجميع ملاحظات المقابلات | كل ادعاء يستشهد بملاحظة، بعد ترميز الأسماء |\n| **كامل** | خارطة الطريق وشرائح الإحاطة | تدافع عنهما مباشرة أمام الراعي |","notes":"اربط كل وضع بما يقيسه: التقييم المراقب يقيس حكمك، فلا مساعد فيه. الإحاطة تقيس قدرتك على الدفاع، فلا يهم من كتب الشريحة الأولى.","minutes":null,"lo":["LO2"]},{"id":"check-small-group","n":41,"title":"إدارة من أربعة، ونتيجة لافتة","kind":"quiz","session":4,"hash":"e50897ab","md":"#### [day1#check-small-group] إدارة من أربعة، ونتيجة لافتة\n\n*نقطة تحقق*\n\n**سؤال:** في استبانة هيئة صحية افتراضية أجاب أربعة موظفين من وحدة الابتكار، ومتوسطهم في بند الذكاء الاصطناعي 4.5 من 5، وهو الأعلى. ماذا تكتب في التقرير؟\n\n- أ. أن وحدة الابتكار الأعلى ثقة في الذكاء الاصطناعي\n- ب. أدمج الوحدة في إدارة أخرى دون ذكر ذلك\n- ج. أذكر متوسطها مع تنبيه إلى صغر العينة\n- د. «أقل من 5» مكان أرقامها، ولا أذكرها في أي جملة من التقرير","notes":"الإجابة: د. إن اختار أحد «ج» فارجع إلى الفرق بين القاعدتين: الحجب للخصوصية، والحذر للدقة.","minutes":null,"lo":["LO2"]},{"id":"lab-1-4","n":42,"title":"الاستبانة والتقييم الذاتي وتجميع الملاحظات","kind":"lab","session":4,"hash":"dc158a4e","md":"#### [day1#lab-1-4] الاستبانة والتقييم الذاتي وتجميع الملاحظات\n\nالمختبر 1.4 · 40 دقيقة\n\nتحسب متوسطات الاستبانة لكل إدارة مع حجب المجموعات الأقل من خمسة، وتقارن تقييم المديرين الذاتي بالأدلة، ثم ترمّز ملاحظات المقابلتين وتجمعها بنموذج مستضاف وتحذف ما لا يستشهد بملاحظة.\n\n[D1_4_survey_synthesis.html](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_4_survey_synthesis.html)\n\n- [ ] احسب جدول الإدارات بعدد المستجيبين واحجب الصغيرة (10 د)\n- [ ] قارن التقييم الذاتي للمديرين بالاستبانة والوثائق (8 د)\n- [ ] رمّز الأسماء في الملاحظات (7 د)\n- [ ] اجمع الملاحظات بنموذج مستضاف واحذف ما لا يستشهد بملاحظة (12 د)\n- [ ] دوّن ما حذفته ولماذا (3 د)\n- [ ] ✱ إضافي: اكتب بندين للاستبانة يقلّلان التضخم: سلوك محدد بدل رأي عام","notes":"الخطوة 1 بجدول محوري. من يتعثر في استيراد الملف: استيراد بترميز UTF-8. في الخطوة 4، إن تعطّل النموذج المستضاف أو بلغ حده المجاني، وزّع ادعاءات النموذج البديل (solutions/standin.json) مطبوعة. انتبه لمن يرسل الملاحظات قبل الترميز: أوقفه.","minutes":null,"lo":[]},{"id":"debrief-1-4","n":43,"title":"المديرون يضعون الجودة مع الأعلى، والموظفون يضعونها قبل الأخيرة","kind":"content","session":4,"hash":"cecb5e8b","md":"#### [day1#debrief-1-4] المديرون يضعون الجودة مع الأعلى، والموظفون يضعونها قبل الأخيرة\n\n*بعد المختبر 1.4*\n\n| البُعد | المديرون (0 إلى 5) | الموظفون (1 إلى 5) |\n| --- | --- | --- |\n| D4 الحماية | 2.9 | 2.55 |\n| D2 الجودة | 2.7 | 2.46 |\n| D1 الحوكمة | 2.7 | 2.66 |\n| D6 الذكاء الاصطناعي | 1.9 | 2.17 |\n\nالجودة خامسة من ستة عند الموظفين، والوثائق: سياسة مسودة، و38% من القراءات تقديرية. مدير العمليات يمنحها 4.\n\n> **مكتب البيانات:** أربعة مستجيبين، فيُكتب «أقل من 5».\n\n> **التجميع:** ثمانية ادعاءات، اثنان بلا رقم ملاحظة، وواحد يستشهد بـ N-OPS-08 وهي تقول «بمبادرة منها». يبقى خمسة.","notes":"الأرقام من check.py 1.4. متوسطات كل الموظفين من 236 إجابة: D1 2.66، D2 2.46، D3 2.62، D4 2.55، D5 2.58، D6 2.17؛ ومتوسط المديرين D3 2.7 وD5 2.6. لا تطرح المقياسين أحدهما من الآخر: قارن الترتيب. ولا تذكر الدرجة المرجعية هنا؛ الفرق عنها يُعرض بعد المختبر 1.5. التجميع بالنموذج البديل، لأن المقرر بُني دون مفتاح نموذج يعمل؛ جرّبه بنموذج حقيقي قبل الدفعة.","minutes":null,"lo":["LO2"]},{"id":"s5","n":44,"title":"تثليث الأدلة ومنح الدرجات ومعايرتها","kind":"section","session":5,"hash":"0c56e2d6","md":"#### [day1#s5] تثليث الأدلة ومنح الدرجات ومعايرتها\n\n*الجلسة 5*\n\n- تمنح كل بُعد درجة من أدلة من نوعين على الأقل وتذكر مراجعها\n- تحدد مستوى الثقة بقواعد مكتوبة\n- تعاير درجاتك مع زميل وتحسم الخلاف بالأدلة","notes":"","minutes":null,"lo":["LO2"]},{"id":"triangulation-three-sources","n":45,"title":"درجة البُعد تقف على ثلاثة أنواع من الأدلة، لا على أعلاها صوتًا","kind":"content","session":5,"hash":"cd4f40ed","md":"#### [day1#triangulation-three-sources] درجة البُعد تقف على ثلاثة أنواع من الأدلة، لا على أعلاها صوتًا\n\n*التثليث*\n\n- **ما قيل.** المقابلات: النية والتفسير، والادعاءات التي تنتظر دليلها.\n- **ما كُتب.** الوثائق: الحالة والتاريخ، والتشغيل إن وُجد سجله.\n- **ما يعيشه الموظفون.** الاستبانة: الممارسة كما تُرى من الميدان.\n\n> **حين تتفق الثلاثة** تكون الثقة عالية. **وحين تختلف** فالاختلاف نفسه نتيجة: من يرى ماذا، ولماذا.","notes":"الجولة الميدانية نوع رابع حين تتاح. في شركة نمير لم تُجرَ جولة، وهذا سيظهر في مستوى الثقة لبعض الأبعاد.","minutes":null,"lo":["LO2"]},{"id":"scale-and-rules","n":46,"title":"المقياس نفسه الذي عرفته في LDS-DMG-101، وقاعدة جديدة: دليلان من نوعين","kind":"content","session":5,"hash":"4078479e","md":"#### [day1#scale-and-rules] المقياس نفسه الذي عرفته في LDS-DMG-101، وقاعدة جديدة: دليلان من نوعين\n\n*مقياس المقرر وقواعده*\n\n| المستوى | الاسم |\n| --- | --- |\n| 0 | غائب |\n| 1 | مبادرات فردية |\n| 2 | قيد التأسيس: وثائق أو أدوار دون تشغيل |\n| 3 | معرَّف ومطبَّق في مجال واحد بدليل تشغيل |\n| 4 | مُدار ومقيس في معظم المجالات |\n| 5 | متقدم ومُحسَّن باستمرار |\n\n1. دليلان من نوعين على الأقل، بالرموز\n2. المسودة لا ترفع فوق 2، والادعاء ليس دليلًا\n3. المعتمد بلا تشغيل امتثال لا نضج: لا يرفع فوق 2\n4. قول المدير يُتحقق منه، ولا يكفي وحده\n5. بين مستويين: الأدنى، واذكر ما ينقص","notes":"في LDS-DMG-101 كانت الدرجة تستند إلى وثيقة واحدة. هنا القاعدة الأولى تطلب نوعين، والقاعدة الرابعة جديدة لأن لدينا مقابلات. المقياس دليل خاص بالمقرر، لا مستويات المؤشر الوطني للبيانات.","minutes":null,"lo":["LO2"]},{"id":"confidence-rules","n":47,"title":"الثقة تقول للراعي كم يعتمد على الدرجة","kind":"content","session":5,"hash":"8c1c2182","md":"#### [day1#confidence-rules] الثقة تقول للراعي كم يعتمد على الدرجة\n\n*مستوى الثقة*\n\n| الثقة | متى |\n| --- | --- |\n| **عالية** | ثلاثة أدلة أو أكثر من نوعين على الأقل تتفق، وأحدها يُظهر الممارسة الفعلية، وجودها أو غيابها |\n| **متوسطة** | نوعان مع تعارض لم يُحسم، أو مصدر مهم لم يُستطلع |\n| **منخفضة** | نوع واحد، أو الدليل الرئيسي ادعاء |\n\n> **الدرجة والثقة مستقلتان:** قد تكون الدرجة 1 بثقة عالية، لأن كل الأدلة تتفق على الضعف.","notes":"كثيرون يخلطون بين الثقة والدرجة، فيظنون أن الدرجة المنخفضة ثقتها منخفضة. العكس شائع: الضعف الواضح تتفق عليه كل المصادر.","minutes":null,"lo":["LO2"]},{"id":"worked-score-parallel","n":48,"title":"بُعد الجودة في جامعة افتراضية، خطوة خطوة","kind":"content","session":5,"hash":"ca4de32c","md":"#### [day1#worked-score-parallel] بُعد الجودة في جامعة افتراضية، خطوة خطوة\n\n*مثال محلول موازٍ*\n\n1. **الأدلة** سياسة معتمدة (V03)؛ تقرير أخطاء القيد شهريًا منذ سنتين (V07)؛ «نصحح كل شيء» (N-REG-02)؛ استبانة: 61% يعرفون لمن يبلغون (S-Q04)\n2. **القواعد** V07 تشغيل في مجال واحد، القيد ← المستوى 3 ممكن؛ لا قياس في المجالات الأخرى ← ليس 4\n3. **الدرجة والثقة** 3، ثقة عالية: ثلاثة أنواع تتفق، وV07 يثبت التشغيل","notes":"امشِ على المثال ببطء. لاحظ أن قول المسجّل «نصحح كل شيء» لم يرفع الدرجة إلى 4؛ رفعها ما ثبت تشغيله فقط. والأرقام هنا افتراضية لجامعة غير شركة نمير.","minutes":null,"lo":["LO2"]},{"id":"why-assessors-differ","n":49,"title":"المقيّمان يختلفان لأن كلًا منهما صدّق مصدرًا مختلفًا","kind":"content","session":5,"hash":"0ed90508","md":"#### [day1#why-assessors-differ] المقيّمان يختلفان لأن كلًا منهما صدّق مصدرًا مختلفًا\n\n*المعايرة بين المقيِّمين*\n\n- **الارتكاز على المدير.** آخر من تحدثت إليه بثقة يرفع الدرجة.\n- **الارتكاز على النسبة.** نسبة امتثال عالية تُقرأ نضجًا.\n- **الهروب إلى الوسط.** المستوى 2 أو 3 لكل شيء، لأنه لا يُخطّأ بعيدًا.\n\n> **البروتوكول:** كل فرق يُناقش بأقوى دليل عند كل طرف، وتحسمه قاعدة مكتوبة. لا متوسط بين الدرجتين.","notes":"المتوسط بين 1 و3 يعطي 2، وهو حكم على لا شيء. إذا لم تحسم القاعدة الخلاف، يُخفَّض مستوى الثقة ويُكتب الدليل الذي سيحسمه.","minutes":null,"lo":["LO2"]},{"id":"within-one-is-lenient","n":50,"title":"الاتفاق ضمن مستوى واحد يحدث بالتخمين في نصف المرات","kind":"content","session":5,"hash":"512206b0","md":"#### [day1#within-one-is-lenient] الاتفاق ضمن مستوى واحد يحدث بالتخمين في نصف المرات\n\n*ما يعنيه «ضمن مستوى واحد»*\n\n| البند | القيمة |\n| --- | --- |\n| المرجع بين 1 و4 | 50% |\n| المرجع 0 أو 5 | 33% |\n| بُعدان، مرجعاهما 2 و3 | 25% |\n| اتفاق تام بين مقيّمين يخمّنان | 17% |\n\n- مخمّن يختار مستوى عشوائيًا من ستة\n- لذلك لا يكفي الاتفاق ضمن مستوى: **تُفحص مراجع الأدلة**\n- وفي التقييم المراقب يُشترط البُعدان معًا، مع مراجع يفحصها المقيّم\n\nمحاكاة: 200,000 تخمين عشوائي على المقياس من 0 إلى 5، ببذرة ثابتة.","notes":"شرط النجاح في المقرر: درجتا التقييم المراقب كلتاهما ضمن مستوى واحد من المرجع. المحاكاة تبين لماذا لا يكفي الشرط وحده: مخمّن عشوائي يجتازه في بُعدين مرجعاهما 2 و3 مرة من كل أربع. ولذلك يُفحص في التقييم المراقب أيضًا أن المراجع حقيقية وتسند الدرجة.\n\nالمحاكاة في ملاحظات عمل المقرر (sim.py): 0.501 لمرجع بين 1 و4، و0.33 للطرفين، و0.249 لبُعدين، و0.166 للاتفاق التام بين مقيّمين عشوائيين.","minutes":null,"lo":["LO2"]},{"id":"check-calibration","n":51,"title":"مقيّمان، ودرجتان، وفرق مستويين","kind":"quiz","session":5,"hash":"8b2c3f40","md":"#### [day1#check-calibration] مقيّمان، ودرجتان، وفرق مستويين\n\n*نقطة تحقق*\n\n**سؤال:** في تقييم صندوق إقراض افتراضي منحتَ بُعد الحماية 2، ومنحه زميلك 4 لأن قائمة الامتثال تقول 90%. لا جولة ولا سجل تشغيل. كيف تحسمان؟\n\n- أ. نأخذ المتوسط بين الدرجتين، أي 3، ونرفع الثقة لأننا اتفقنا عليه\n- ب. يقرر أقدمنا خبرة في التقييم، ونكتب درجته\n- ج. نطبّق قاعدة الوجود بلا تشغيل: 2، ونكتب السجل الذي يرفعها\n- د. نعتمد 4 لأن نسبة 90% رقم مكتوب في وثيقة","notes":"الإجابة: ج. إن اختار أحد «أ» فاسأله: على أي دليل يقف المستوى 3؟ لا جواب، لأنه لم يأتِ من دليل.","minutes":null,"lo":["LO2"]},{"id":"lab-1-5","n":52,"title":"تقييم ستة أبعاد ومعايرة الدرجات مع زميل","kind":"lab","session":5,"hash":"9f45f8c8","md":"#### [day1#lab-1-5] تقييم ستة أبعاد ومعايرة الدرجات مع زميل\n\nالمختبر 1.5 · 60 دقيقة\n\nمن سجل الأدلة المرجعي تمنح كل بُعد من الأبعاد الستة درجة ومستوى ثقة ومراجع أدلة، دون ذكاء اصطناعي، ثم تعاير درجاتك مع زميل أو مع درجات صالح وتتفقان على ملف واحد.\n\n[D1_5_score_calibrate.html](https://sdaiaacademy.github.io/lds-adv-202/labs/D1_5_score_calibrate.html)\n\n- [ ] امنح الأبعاد الستة درجاتها وحدك بالمراجع والثقة (18 د)\n- [ ] بادل ملفك مع زميلك (6 د)\n- [ ] ناقشا كل فرق بالأدلة لا بالانطباع (14 د)\n- [ ] اتفقا على ملف واحد وسجّلا سبب كل تعديل (10 د)\n- [ ] قارنا بالمرجع واحسبا الاتفاق (7 د)\n- [ ] اكتبا ملاحظة معايرة من ثلاثة أسطر (5 د)\n- [ ] ✱ إضافي: اختر البُعد الأضعف ثقة واكتب الدليل الذي يرفع ثقته إلى عالية","notes":"دون ذكاء اصطناعي: هذا تدريب على التقييم المراقب. البداية من evidence_log_reference.xlsx وscoring_guide.xlsx للجميع، لا من سجلات المختبر 1.3. من لا زميل له يعاير مع peer_scores.xlsx. لا تعرض الملف المرجعي قبل الخطوة 5.","minutes":null,"lo":[]},{"id":"debrief-1-5","n":53,"title":"الملف المرجعي: بُعد واحد في المستوى 3، وبُعدان في المستوى 1","kind":"content","session":5,"hash":"145fa868","md":"#### [day1#debrief-1-5] الملف المرجعي: بُعد واحد في المستوى 3، وبُعدان في المستوى 1\n\n*بعد المختبر 1.5*\n\n| البُعد | الدرجة | الثقة | صالح | ما صدّقه صالح |\n| --- | --- | --- | --- | --- |\n| D1 الاستراتيجية والحوكمة | 2 | عالية | 2 |  |\n| D2 جودة البيانات والبيانات الوصفية | 1 | عالية | 3 | قول مدير العمليات |\n| D3 المنصات والتكامل | 3 | متوسطة | 3 |  |\n| D4 الحماية والتصنيف | 2 | متوسطة | 4 | قائمة الامتثال 86% |\n| D5 القدرات البشرية والثقافة | 2 | عالية | 2 |  |\n| D6 استخدام الذكاء الاصطناعي وأثره | 1 | عالية | 2 | عرض مجلس الإدارة |\n\n> **اتفاق صالح مع المرجع:** تام في 3 من 6، وضمن مستوى في 4 من 6. ومن يقول 2 لكل بُعد يقع ضمن مستوى في الستة كلها.","notes":"الأرقام من check.py 1.5 ومن profile_reference.xlsx. D3 وحده في المستوى 3 بفضل سجل D10، وثقته متوسطة لأن تقنية المعلومات لم تُقابَل ولم تُجرَ جولة. ركّز على السطر الأخير: «2 لكل شيء» يجتاز شرط المستوى الواحد هنا، ولذلك تُفحص المراجع.\n\nالآن فقط اعرض تضخم التقييم الذاتي عن المرجع (check.py 1.4): D2 +1.7، وD4 وD6 +0.9، وD1 +0.7، وD5 +0.6، وD3 -0.3. أكبر فرق منفرد: مدير العمليات يمنح الجودة 4 والمرجع 1، وهو القول الذي صدّقه صالح فمنحها 3.","minutes":null,"lo":["LO2"]},{"id":"wrap-up","n":54,"title":"ثلاثة أشياء تبقى","kind":"content","session":5,"hash":"3d27d4c4","md":"#### [day1#wrap-up] ثلاثة أشياء تبقى\n\n*ما نأخذه من اليوم الأول*\n\n- **النموذج يُكيَّف.** لأسئلة الراعي، ويُسجَّل أصل كل بُعد.\n- **القول يُتحقق منه.** «آخر مرة، ومن، وأرني» تحوّل الصفة إلى دليل أو تكشف غيابه.\n- **الدرجة من دليلين.** من نوعين، بقاعدة مكتوبة، ومعها ثقتها.","notes":"اطلب من كل ثنائي جملة واحدة: أي درجة في ملفكم ستدافعون عنها أصعب دفاع أمام الرئيس التنفيذي؟ احتفظ بإجاباتهم لبطاقات الاعتراض غدًا.","minutes":null,"lo":[]},{"id":"next","n":55,"title":"غدًا: من الدرجات إلى قرار الراعي","kind":"content","session":5,"hash":"f125f336","md":"#### [day1#next] غدًا: من الدرجات إلى قرار الراعي\n\n*قبل الغد*\n\n- اقرأ موجز الراعي مرة أخرى، وخاصة ما يتوقعه في الذكاء الاصطناعي\n- احتفظ بملف درجاتك وملاحظة المعايرة: ستقارنهما بالمرجع في المختبرات\n- في ختام الغد: ساعة تقييم مراقب دون ذكاء اصطناعي، ثم الإحاطة في ثنائيات","notes":"ذكّر بأن التقييم المراقب يكون على أدلة جديدة لم يرها أحد، فلا فائدة من حفظ ملف شركة نمير. ما يُحفظ هو القواعد.","minutes":null,"lo":[]}],"activities":[{"id":"check-model-choice-q1","slide":"check-model-choice","type":"single","prompt":"جامعة افتراضية طلب رئيسها تقييمًا لنضج البيانات يشمل بيانات البحث. اقترح زميلك اعتماد نموذج ملزم لإدارة البيانات وحده لأنه ملزم، وهو لا يذكر بيانات البحث. ما ردك؟","options":[{"key":"أ","text":"أعتمده أساسًا، وأضيف بُعد بيانات البحث من نموذج آخر"},{"key":"ب","text":"أعتمده كما هو، فالنموذج الملزم يغطي كل ما سأل عنه رئيس الجامعة"},{"key":"ج","text":"أستبدله بنموذج دولي أشهر منه وأكثر استخدامًا في الجامعات المماثلة"},{"key":"د","text":"أحوّل مواصفاته إلى قائمة تحقق بنعم أو لا لكل إدارة في الجامعة"}],"correct":[0],"explanation":"النموذج الملزم لا يغطي ما سأل عنه الراعي. التكييف يأخذ الأساس ويضيف ما ينقصه من نموذج آخر، ويسجل أصل كل بُعد.","misconceptions":["","يخلط بين الإلزام والتغطية: النموذج الملزم لا يغطي ما لم يُكتب له","يظن أن الأشهر أصلح: نموذج من سياق آخر لا يعرف تنظيمات الجامعة ولا يغطي ما سأله رئيسها","يخلط بين التقييم والتدقيق: قائمة المواصفات تقيس الامتثال الثنائي لا مستوى النضج"],"lo":["LO1"]},{"id":"check-interview-followup-q1","slide":"check-interview-followup","type":"single","prompt":"في مقابلة مع مدير المستودعات في شركة توزيع افتراضية قال: «جودة بيانات المخزون ممتازة، نحن في المستوى 4.» ما خطوتك التالية؟","options":[{"key":"أ","text":"أسجّل المستوى 4 كما قال، لأنه صاحب الإدارة والأعلم بها"},{"key":"ب","text":"أخفّض الدرجة سلفًا لأن المديرين يبالغون"},{"key":"ج","text":"أسأل عن آخر خطأ اكتُشف ومن صحّحه، وأطلب رؤية القياس"},{"key":"د","text":"أنتقل إلى السؤال التالي وأتحقق من قوله لاحقًا في الاستبانة"}],"correct":[2],"explanation":"القول مصدر يُتحقق منه. سؤال «آخر مرة، ومن، وأرني» يحوّله إلى مثال ومخرج، أو يكشف أنه لا مخرج.","misconceptions":["يعامل القول دليلًا كافيًا: المستوى يحتاج مخرجًا يثبت التشغيل والقياس","يخلط بين الشك والتحقق: الحكم بالخفض قبل الدليل انطباع معاكس، لا دليل","","يؤجل الدليل إلى غير موضعه: الاستبانة تقيس ما يراه الموظفون، لا ما تقيسه الإدارة"],"lo":["LO2"]},{"id":"check-document-strength-q1","slide":"check-document-strength","type":"single","prompt":"تقيّم جودة البيانات في صندوق إقراض افتراضي. أي هذه الوثائق أقوى دليل على أن الجودة تُدار فعلًا؟","options":[{"key":"أ","text":"سياسة جودة البيانات المعتمدة من مجلس الإدارة"},{"key":"ب","text":"تقارير القياس الشهرية للسنة الأخيرة، مع ما صُحّح"},{"key":"ج","text":"عرض قُدّم لمجلس الإدارة يقول إن دقة البيانات بلغت 98%"},{"key":"د","text":"دعوة الموظفين إلى ورشة «أسبوع الجودة»"}],"correct":[1],"explanation":"سجل متكرر يثبت التشغيل والقياس معًا. السياسة تثبت الوجود، والعرض ادعاء، والدعوة نية.","misconceptions":["يخلط بين الوجود والتشغيل: الاعتماد يثبت أن السياسة موجودة، لا أن أحدًا يعمل بها","","يعامل الادعاء دليلًا: رقم في عرض بلا منهج ولا مصدر لا يُقاس عليه","يخلط بين التوعية والممارسة: الدعوة تثبت أن ورشة ستُعقد، لا أن الجودة تُدار"],"lo":["LO2"]},{"id":"check-small-group-q1","slide":"check-small-group","type":"single","prompt":"في استبانة هيئة صحية افتراضية أجاب أربعة موظفين من وحدة الابتكار، ومتوسطهم في بند الذكاء الاصطناعي 4.5 من 5، وهو الأعلى. ماذا تكتب في التقرير؟","options":[{"key":"أ","text":"أن وحدة الابتكار الأعلى ثقة في الذكاء الاصطناعي"},{"key":"ب","text":"أدمج الوحدة في إدارة أخرى دون ذكر ذلك"},{"key":"ج","text":"أذكر متوسطها مع تنبيه إلى صغر العينة"},{"key":"د","text":"«أقل من 5» مكان أرقامها، ولا أذكرها في أي جملة من التقرير"}],"correct":[3],"explanation":"حد الحجب يحمي الأفراد في المجموعات الصغيرة. ولا يُلتف عليه بذكر النتيجة في جملة.","misconceptions":["يقدّم الرقم اللافت على الخصوصية: في فريق من أربعة يُعرف من أجاب","يظن أن ضم الوحدة يحل المشكلة دون إفصاح: الحجب قاعدة تُكتب، لا تعديل صامت","يحسب أن الدقة وحدها هي المشكلة: الحذر في القراءة لا يغني عن الحجب",""],"lo":["LO2"]},{"id":"check-calibration-q1","slide":"check-calibration","type":"single","prompt":"في تقييم صندوق إقراض افتراضي منحتَ بُعد الحماية 2، ومنحه زميلك 4 لأن قائمة الامتثال تقول 90%. لا جولة ولا سجل تشغيل. كيف تحسمان؟","options":[{"key":"أ","text":"نأخذ المتوسط بين الدرجتين، أي 3، ونرفع الثقة لأننا اتفقنا عليه"},{"key":"ب","text":"يقرر أقدمنا خبرة في التقييم، ونكتب درجته"},{"key":"ج","text":"نطبّق قاعدة الوجود بلا تشغيل: 2، ونكتب السجل الذي يرفعها"},{"key":"د","text":"نعتمد 4 لأن نسبة 90% رقم مكتوب في وثيقة"}],"correct":[2],"explanation":"قائمة الامتثال تثبت الوجود. بلا دليل تشغيل لا ترتفع الدرجة فوق 2، والفرق تحسمه القاعدة لا المتوسط.","misconceptions":["يحسم بالحساب لا بالدليل: المتوسط حكم على لا شيء","يعامل الأقدم أو الأعلى رتبة حكمًا: المعايرة بالأدلة لا بالأقدمية","","يقرأ نسبة الامتثال نضجًا: المؤشَّر عليه يثبت الوجود لا التشغيل"],"lo":["LO2"]}],"ai":{"context":{"course":"../context/course.md","courseJs":"../context/course.js","day":"day1.md","llms":"../llms.txt"},"tasks":[],"tools":[]},"bridge":{"allowedOrigins":[]},"features":{},"strings":{}}</script>
+<script src="../_engine/academy.js"></script>
+</body>
+</html>
