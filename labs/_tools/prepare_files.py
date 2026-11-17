@@ -169,7 +169,8 @@ def main():
     with open(OUT / "staff_survey.csv", "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
         w.writerow(["respondent", "department", "band"] + [q for q, _d, _t in ITEMS])
-        w.writerows(survey(rng))
+        srows = survey(rng)
+        w.writerows(srows)
     wb = book()
     sheet(wb, "البنود", ["البند", "البُعد", "العبارة (1 لا أوافق إطلاقًا، 5 أوافق تمامًا)"], ITEMS, [8, 8, 70])
     sheet(wb, "قاعدة العرض", ["القاعدة"], [("لا تُعرض نتيجة أي مجموعة يقل عدد المستجيبين فيها عن 5. تُكتب «أقل من 5» مكان الأرقام.",),
@@ -195,6 +196,9 @@ def main():
         ev.append((nid, "مقابلة", tag, text))
     for d in T.DOCS:
         ev.append((d[0], "وثيقة", d[5], d[1]))
+    for k, (q, _dim, text) in enumerate(ITEMS):
+        m = sum(r[3 + k] for r in srows) / len(srows)
+        ev.append((f"S-{q}", "استبانة", f"المتوسط {m:.2f} من {len(srows)} إجابة", text))
     wb = book()
     sheet(wb, "الأدلة", ["الرمز", "النوع", "الحالة أو العلامة", "المحتوى"], ev, [12, 10, 14, 90])
     save(wb, OUT / "start" / "evidence_log_reference.xlsx")
